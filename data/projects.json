@@ -57,6 +57,10 @@
     {
       "title": "REST API Integration",
       "description": "Secure third-party and internal service integrations with clean contracts."
+    },
+    {
+      "title": "Logistics and Transportation",
+      "description": "Operational platforms for trucking, permits, route management, and logistics workflows."
     }
   ],
   "projects": [
@@ -178,6 +182,27 @@
         "assets/images/card1.jpg",
         "assets/images/card2.jpg",
         "assets/images/card3.jpg"
+      ]
+    },
+    {
+      "slug": "lmil-logistics-platform",
+      "title": "LMIL Logistics Platform",
+      "domain": "Logistics and Transportation",
+      "summary": "Enterprise logistics platform enabling permit automation, mileage computation, and operational command dashboards for trucking businesses.",
+      "tech": "Laravel, MySQL, Blade, JavaScript, Bootstrap",
+      "live_url": "https://lmil.infinityfreeapp.com/",
+      "problem": "The client required a centralized system to manage trucking permits, route calculations, and operational records efficiently.",
+      "role": "Full Stack Engineer",
+      "outcomes": [
+        "Developed complete permit management workflows.",
+        "Built dynamic route and mileage tracking features.",
+        "Implemented admin dashboard for operational visibility.",
+        "Structured MySQL database for scalable logistics operations."
+      ],
+      "screenshots": [
+        "assets/images/lmil1.jpg",
+        "assets/images/lmil2.jpg",
+        "assets/images/lmil3.jpg"
       ]
     }
   ]
