@@ -187,38 +187,91 @@
             <div class="col-md-3">
                <div class="card-container">
                   <div class="pr-card-overlay"><div class="designation"><h5>Web App</h5></div></div>
-                  <div class="img-wrap"><img src="assets/images/pr-card.png" alt=""></div>
-                  <div class="btm-card"><div><img src="assets/images/pr-card-btm.png" alt=""></div><div class="pr-name"><h5>AMZ Geeks</h5><p>React.js, Laravel, MySQL, Redux Toolkit</p><p><a href="https://amzgeeks.com/" target="_blank" rel="noreferrer" style="color:#fff;text-decoration:underline;">Visit Project</a></p></div></div>
+                  <div class="img-wrap"><img src="assets/images/kepkahouse.png" alt=""></div>
+                  <div class="btm-card"><div><img src="assets/images/pr-card-btm.png" alt=""></div><div class="pr-name"><h5>Kepka House</h5><p>Next.js, MongoDb, Redux Toolkit</p><p>
+                     <a href="https://kepkahouse.com/" target="_blank" rel="noreferrer" style="color:#fff;text-decoration:underline;">Visit Project</a>
+                  </p></div></div>
                </div>
             </div>
             <div class="col-md-3">
-               <div class="card-container">
-                  <div class="pr-card-overlay"><div class="designation"><h5>Healthcare Platform</h5></div></div>
-                  <div class="img-wrap"><img src="assets/images/pr-card.png" alt=""></div>
-                  <div class="btm-card"><div><img src="assets/images/pr-card-btm.png" alt=""></div><div class="pr-name"><h5>Texas Center Wellness</h5><p>React.js, Node.js, MongoDB, Redux Toolkit</p><p><a href="https://texascenterwellness.com/" target="_blank" rel="noreferrer" style="color:#fff;text-decoration:underline;">Visit Project</a></p></div></div>
-               </div>
-            </div>
+   <div class="card-container">
+      <div class="pr-card-overlay">
+         <div class="designation">
+            <h5>Home Services Marketplace</h5>
+         </div>
+      </div>
+      <div class="img-wrap">
+         <img src="assets/images/goferassistants.png" alt="Gofer Assistants">
+      </div>
+      <div class="btm-card">
+         <div>
+            <img src="assets/images/pr-card-btm.png" alt="">
+         </div>
+         <div class="pr-name">
+            <h5>Gofer Assistants</h5>
+            <p>React.js, Node.js, MongoDB, Stripe, REST API</p>
+
+            <p>
+               <a href="https://goferassistants.com/" target="_blank" rel="noreferrer" style="color:#fff;text-decoration:underline;">
+               Visit Project</a>
+            </p>
+         </div>
+      </div>
+   </div>
+</div>
+
+
             <div class="col-md-3">
                <div class="card-container">
                   <div class="pr-card-overlay"><div class="designation"><h5>Sports Platform</h5></div></div>
                   <div class="img-wrap"><img src="assets/images/pr-card.png" alt=""></div>
-                  <div class="btm-card"><div><img src="assets/images/pr-card-btm.png" alt=""></div><div class="pr-name"><h5>Four Coaches</h5><p>React.js, Node.js, MongoDB, Context API</p><p><a href="https://stage1001.devdesignbuild.com/" target="_blank" rel="noreferrer" style="color:#fff;text-decoration:underline;">Visit Project</a></p></div></div>
+                  <div class="btm-card"><div><img src="assets/images/pr-card-btm.png" alt=""></div><div class="pr-name"><h5>Four Coaches</h5><p>React.js, Node.js, MongoDB, Context API</p>
+                  <p><a href="https://stage1001.devdesignbuild.com/" target="_blank" rel="noreferrer" style="color:#fff;text-decoration:underline;">Visit Project</a></p></div></div>
                </div>
             </div>
             <div class="col-md-3">
                <div class="card-container">
                   <div class="pr-card-overlay"><div class="designation"><h5>E-Commerce</h5></div></div>
-                  <div class="img-wrap"><img src="assets/images/pr-card.png" alt=""></div>
-                  <div class="btm-card"><div><img src="assets/images/pr-card-btm.png" alt=""></div><div class="pr-name"><h5>Pepperoni Pizza</h5><p>React.js, Laravel, MySQL, Redux Toolkit</p><p><a href="https://brian-pizza-man-frontend.devdesignbuild.com/" target="_blank" rel="noreferrer" style="color:#fff;text-decoration:underline;">Visit Project</a></p></div></div>
+                  <div class="img-wrap"><img src="assets/images/amaun.png" alt=""></div>
+                  <div class="btm-card"><div><img src="assets/images/pr-card-btm.png" alt=""></div><div class="pr-name"><h5>Amaun</h5><p>Next.js, MongoDb, Redux Toolkit</p>
+                  <p><a href="https://amaun-next.vercel.app/" target="_blank" rel="noreferrer" style="color:#fff;text-decoration:underline;">Visit Project</a></p></div></div>
                </div>
             </div>
             <div class="col-md-3">
                <div class="card-container">
                   <div class="pr-card-overlay"><div class="designation"><h5>Corporate Platform</h5></div></div>
                   <div class="img-wrap"><img src="assets/images/pr-card.png" alt=""></div>
-                  <div class="btm-card"><div><img src="assets/images/pr-card-btm.png" alt=""></div><div class="pr-name"><h5>Tuxedo Air Platform</h5><p>Laravel, SQL, Blade, JavaScript</p><p><a href="https://tuxedo-frontend-stage.devdesignbuild.com/" target="_blank" rel="noreferrer" style="color:#fff;text-decoration:underline;">Visit Project</a></p></div></div>
+                  <div class="btm-card"><div><img src="assets/images/pr-card-btm.png" alt=""></div><div class="pr-name"><h5>Tuxedo Air Platform</h5>
+                  <p>Laravel, SQL, Blade, JavaScript</p><p><a href="https://tuxedo-frontend-stage.devdesignbuild.com/" target="_blank" rel="noreferrer" style="color:#fff;text-decoration:underline;">Visit Project</a></p></div></div>
                </div>
             </div>
+            <div class="col-md-3">
+   <div class="card-container">
+      <div class="pr-card-overlay">
+         <div class="designation">
+            <h5>E-commerce Product Showcase</h5>
+         </div>
+      </div>
+      <div class="img-wrap">
+         <img src="assets/images/brandon-rosy.png" alt="Peptide Store">
+      </div>
+      <div class="btm-card">
+         <div>
+            <img src="assets/images/pr-card-btm.png" alt="">
+         </div>
+         <div class="pr-name">
+            <h5>Peptide Product Website</h5>
+            <p>Next.js, React.js, Tailwind CSS, Vercel</p>
+
+            <p>
+               <a href="https://brandon-rosy.vercel.app/" target="_blank" rel="noreferrer" style="color:#fff;text-decoration:underline;">
+               Visit Project</a>
+            </p>
+         </div>
+      </div>
+   </div>
+</div>
+
          </div>
       </div>
    </section>
@@ -390,7 +443,7 @@
    </section>
    <section class="why_us">
       <div class="container-fluid">
-        
+
          <div class="row" style="align-items:center">
             <div class="col-lg-6 col-md-12">
                <div class="experience_year_container">
@@ -434,7 +487,7 @@
       </div>
    </section>
 
-  
+
 
    <section class="testimonial-sec">
       <div class="container-fluid">

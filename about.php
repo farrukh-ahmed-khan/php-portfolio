@@ -200,7 +200,121 @@
         </div>
     </section>
 
+    <section class="latest-product mt-5">
+      <div class="container-fluid">
+         <div class="row d-flex align-items-center">
+            <div class="col-md-9">
+               <div class="latest-product-head">
+                  <h4 class="wow slideInLeft" style="animation-delay: 0.2s; visibility: visible; animation-name: slideInLeft;">FEATURED PROJECTS</h4>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="latest-product-btn">
+                  <a href="./about.php" class="wow slideInRight" style="animation-delay: 0.6s; visibility: visible; animation-name: slideInRight;">
+                     <p>VIEW PROJECTS</p>
+                     <img src="assets/images/more-icon.png" alt="">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
 
+   </section>
+
+ <section class="prcards">
+      <div class="container-fluid p-0">
+         <div class="row pt-5 pb-5 pro-card-wrapper">
+            <div class="col-md-3">
+               <div class="card-container">
+                  <div class="pr-card-overlay"><div class="designation"><h5>Web App</h5></div></div>
+                  <div class="img-wrap"><img src="assets/images/kepkahouse.png" alt=""></div>
+                  <div class="btm-card"><div><img src="assets/images/pr-card-btm.png" alt=""></div><div class="pr-name"><h5>Kepka House</h5><p>Next.js, MongoDb, Redux Toolkit</p><p>
+                     <a href="https://kepkahouse.com/" target="_blank" rel="noreferrer" style="color:#fff;text-decoration:underline;">Visit Project</a>
+                  </p></div></div>
+               </div>
+            </div>
+            <div class="col-md-3">
+   <div class="card-container">
+      <div class="pr-card-overlay">
+         <div class="designation">
+            <h5>Home Services Marketplace</h5>
+         </div>
+      </div>
+      <div class="img-wrap">
+         <img src="assets/images/goferassistants.png" alt="Gofer Assistants">
+      </div>
+      <div class="btm-card">
+         <div>
+            <img src="assets/images/pr-card-btm.png" alt="">
+         </div>
+         <div class="pr-name">
+            <h5>Gofer Assistants</h5>
+            <p>React.js, Node.js, MongoDB, Stripe, REST API</p>
+
+            <p>
+               <a href="https://goferassistants.com/" target="_blank" rel="noreferrer" style="color:#fff;text-decoration:underline;">
+               Visit Project</a>
+            </p>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+            <div class="col-md-3">
+               <div class="card-container">
+                  <div class="pr-card-overlay"><div class="designation"><h5>Sports Platform</h5></div></div>
+                  <div class="img-wrap"><img src="assets/images/pr-card.png" alt=""></div>
+                  <div class="btm-card"><div><img src="assets/images/pr-card-btm.png" alt=""></div><div class="pr-name"><h5>Four Coaches</h5><p>React.js, Node.js, MongoDB, Context API</p>
+                  <p><a href="https://stage1001.devdesignbuild.com/" target="_blank" rel="noreferrer" style="color:#fff;text-decoration:underline;">Visit Project</a></p></div></div>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="card-container">
+                  <div class="pr-card-overlay"><div class="designation"><h5>E-Commerce</h5></div></div>
+                  <div class="img-wrap"><img src="assets/images/amaun.png" alt=""></div>
+                  <div class="btm-card"><div><img src="assets/images/pr-card-btm.png" alt=""></div><div class="pr-name"><h5>Amaun</h5><p>Next.js, MongoDb, Redux Toolkit</p>
+                  <p><a href="https://amaun-next.vercel.app/" target="_blank" rel="noreferrer" style="color:#fff;text-decoration:underline;">Visit Project</a></p></div></div>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="card-container">
+                  <div class="pr-card-overlay"><div class="designation"><h5>Corporate Platform</h5></div></div>
+                  <div class="img-wrap"><img src="assets/images/pr-card.png" alt=""></div>
+                  <div class="btm-card"><div><img src="assets/images/pr-card-btm.png" alt=""></div><div class="pr-name"><h5>Tuxedo Air Platform</h5>
+                  <p>Laravel, SQL, Blade, JavaScript</p><p><a href="https://tuxedo-frontend-stage.devdesignbuild.com/" target="_blank" rel="noreferrer" style="color:#fff;text-decoration:underline;">Visit Project</a></p></div></div>
+               </div>
+            </div>
+            <div class="col-md-3">
+   <div class="card-container">
+      <div class="pr-card-overlay">
+         <div class="designation">
+            <h5>E-commerce Product Showcase</h5>
+         </div>
+      </div>
+      <div class="img-wrap">
+         <img src="assets/images/brandon-rosy.png" alt="Peptide Store">
+      </div>
+      <div class="btm-card">
+         <div>
+            <img src="assets/images/pr-card-btm.png" alt="">
+         </div>
+         <div class="pr-name">
+            <h5>Peptide Product Website</h5>
+            <p>Next.js, React.js, Tailwind CSS, Vercel</p>
+
+            <p>
+               <a href="https://brandon-rosy.vercel.app/" target="_blank" rel="noreferrer" style="color:#fff;text-decoration:underline;">
+               Visit Project</a>
+            </p>
+         </div>
+      </div>
+   </div>
+</div>
+
+         </div>
+      </div>
+   </section>
      <section class="testimonial-sec">
       <div class="container-fluid">
          <div class="row">

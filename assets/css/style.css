@@ -1483,6 +1483,8 @@ Burger king
 }
 .card-container .img-wrap img {
   width: 100%;
+  height: 500px;
+  border-radius: 33.497px 33.497px 51.497px 0px;
 }
 .pr-card-overlay {
   position: absolute;
