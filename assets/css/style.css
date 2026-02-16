@@ -28,7 +28,7 @@
     top: 50% !important;
     left: -225px !important;
     width: 550px !important;
-    /* animation: rotation 20s linear infinite; */
+    animation: rotation 20s linear infinite;
   }
   .about_after::after {
     content: "";
@@ -37,7 +37,7 @@
     left: 103% !important;
     width: 450px !important;
     rotate: 297deg;
-    /* animation: rotation 20s linear infinite; */
+    animation: rotation 20s linear infinite;
   }
   .about-us {
     padding: 54px 70px !important;
@@ -123,7 +123,7 @@
     width: 60%;
     height: 100%;
     rotate: 37deg;
-    /* animation: rotation 20s linear infinite; */
+    animation: rotation 20s linear infinite;
   }
 }
 /* END MEDIA QUERY */
@@ -715,7 +715,7 @@ footer {
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  /* animation: rotation 20s linear infinite; */
+  animation: rotation 20s linear infinite;
 }
 
 @keyframes rotation {
@@ -736,7 +736,7 @@ footer {
   width: 50%;
   height: 100%;
   background-size: 100% 100%;
-  /* animation: rotate 20s linear infinite; */
+  animation: rotate 20s linear infinite;
 }
 
 /* navigation */
@@ -1055,7 +1055,7 @@ Burger king
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  /* animation: rotation 20s linear infinite; */
+  animation: rotation 20s linear infinite;
 }
 .about_us_btn {
   margin-top: 25px;
@@ -1225,7 +1225,7 @@ Burger king
   position: absolute;
   width: 60%;
   height: 100%;
-  /* animation: rotation 20s linear infinite; */
+  animation: rotation 20s linear infinite;
 }
 .get_in_touch .get-in-touch-head h4 {
   color: #fff;
@@ -2156,7 +2156,7 @@ Burger king
   padding-left: 57px; */
   position: relative;
   overflow: hidden;
-  height: 60vh;
+  height: 70vh;
 }
 .firstSec .banner-content {
   padding: 200px 0px;

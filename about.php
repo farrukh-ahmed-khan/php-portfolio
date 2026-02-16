@@ -144,7 +144,7 @@
       </div>
    </section>
 
- 
+
     <section class="about-office-numbers">
         <div class="container-fluid">
             <div class="row">
@@ -200,7 +200,7 @@
         </div>
     </section>
 
- 
+
      <section class="testimonial-sec">
       <div class="container-fluid">
          <div class="row">
@@ -419,27 +419,6 @@
     <?php include "includes/footer.php"; ?>
     <?php include "includes/scripts.php"; ?>
     <script>
-    const marqueeContent = document.querySelector('.marquee-content');
-
-marqueeContent.addEventListener('mouseenter', () => {
-  marqueeContent.classList.add('paused');
-});
-
-marqueeContent.addEventListener('mouseleave', () => {
-  marqueeContent.classList.remove('paused');
-});
-
-const marqueeContent2 = document.querySelector('.marquee-content-left');
-
-marqueeContent2.addEventListener('mouseenter', () => {
-  marqueeContent2.classList.add('paused');
-});
-
-marqueeContent2.addEventListener('mouseleave', () => {
-  marqueeContent2.classList.remove('paused');
-});
-
-
 
 var ww = window.innerWidth,
          wh = window.innerHeight;
@@ -555,6 +534,32 @@ var ww = window.innerWidth,
             }
          });
       }
+
+
+
+
+    const marqueeContent = document.querySelector('.marquee-content');
+
+marqueeContent.addEventListener('mouseenter', () => {
+  marqueeContent.classList.add('paused');
+});
+
+marqueeContent.addEventListener('mouseleave', () => {
+  marqueeContent.classList.remove('paused');
+});
+
+const marqueeContent2 = document.querySelector('.marquee-content-left');
+
+marqueeContent2.addEventListener('mouseenter', () => {
+  marqueeContent2.classList.add('paused');
+});
+
+marqueeContent2.addEventListener('mouseleave', () => {
+  marqueeContent2.classList.remove('paused');
+});
+
+
+
 
 
     </script>

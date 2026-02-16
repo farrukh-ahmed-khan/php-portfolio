@@ -1,36 +1,36 @@
 <?php
-include("includes/project-data.php");
-$slug = isset($_GET['slug']) ? trim($_GET['slug']) : '';
-$project = get_project_by_slug($slug);
-if (!$project) {
+    include "includes/project-data.php";
+    $slug    = isset($_GET['slug']) ? trim($_GET['slug']) : '';
+    $project = get_project_by_slug($slug);
+    if (! $project) {
     http_response_code(404);
-    include("404.php");
+    include "404.php";
     exit;
-}
+    }
 
-$pageTitle = $project['title'] . ' | Project Case Study';
-$pageDescription = $project['summary'];
-$pagePath = 'project.php?slug=' . urlencode($project['slug']);
-$pageType = 'article';
-$projectSchema = [
-    '@context' => 'https://schema.org',
-    '@type' => 'SoftwareSourceCode',
-    'name' => $project['title'],
+    $pageTitle       = $project['title'] . ' | Project Case Study';
+    $pageDescription = $project['summary'];
+    $pagePath        = 'project.php?slug=' . urlencode($project['slug']);
+    $pageType        = 'article';
+    $projectSchema   = [
+    '@context'    => 'https://schema.org',
+    '@type'       => 'SoftwareSourceCode',
+    'name'        => $project['title'],
     'description' => $project['summary'],
-    'url' => $project['live_url'],
-    'author' => [
+    'url'         => $project['live_url'],
+    'author'      => [
         '@type' => 'Person',
-        'name' => 'Farrukh Ahmed Khan'
-    ]
-];
+        'name'  => 'Farrukh Ahmed Khan',
+    ],
+    ];
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include("includes/compatibility.php"); ?>
-    <?php include("includes/seo.php"); ?>
+    <?php include "includes/compatibility.php"; ?>
+    <?php include "includes/seo.php"; ?>
     <link rel="shortcut icon" href="assets/images/vector1.png" />
-    <?php include("includes/style.php"); ?>
+    <?php include "includes/style.php"; ?>
     <style>
         .project-template { padding: 110px 90px 80px; }
         .project-hero {
@@ -93,7 +93,7 @@ $projectSchema = [
     </style>
 </head>
 <body>
-<?php include("includes/header.php"); ?>
+<?php include "includes/header.php"; ?>
 <div class="circle-cursor"></div>
 
 <section class="firstSec">
@@ -177,11 +177,124 @@ $projectSchema = [
     </div>
 </section>
 
-<?php include("includes/footer.php"); ?>
-<?php include("includes/scripts.php"); ?>
+<?php include "includes/footer.php"; ?>
+<?php include "includes/scripts.php"; ?>
 
 <script>
-    
+    var ww = window.innerWidth,
+         wh = window.innerHeight;
+      var torusRadius = 200;
+      var torusDiameter = 25;
+      var rings = 180;
+      var detail = 30;
+
+      var renderer = new THREE.WebGLRenderer({
+         canvas: document.querySelector("canvas"),
+         antialias: true
+      });
+      renderer.setSize(ww, wh);
+
+      var scene = new THREE.Scene();
+      scene.fog = new THREE.Fog(0x000000, torusRadius * 0.8, torusRadius * 1.1);
+
+      var camera = new THREE.PerspectiveCamera(60, ww / wh, 1, torusRadius * 1.1);
+      camera.position.set(Math.cos(0) * torusRadius, 0, Math.sin(0) * torusRadius);
+
+      var light = new THREE.PointLight(0xffffff, 2, 150);
+      light.position.set(Math.cos(-Math.PI * 0.3) * torusRadius, 0, Math.sin(-Math.PI * 0.3) * torusRadius);
+      scene.add(light);
+
+      TweenMax.to(light.position, 6, {
+         x: Math.cos(Math.PI * 0.3) * torusRadius,
+         z: Math.sin(Math.PI * 0.3) * torusRadius,
+         ease: Power2.easeInOut,
+         repeat: -1,
+         yoyo: true
+      });
+
+      window.addEventListener("resize", function () {
+         ww = window.innerWidth;
+         wh = window.innerHeight;
+
+         camera.aspect = ww / wh;
+         camera.updateProjectionMatrix();
+
+         renderer.setSize(ww, wh);
+      });
+      var mouse = new THREE.Vector2(0, 0);
+
+      var torus = new THREE.Object3D();
+      TweenMax.to(torus.rotation, 90, {
+         y: Math.PI * 2,
+         ease: Linear.easeNone,
+         repeat: -1
+      });
+      scene.add(torus);
+
+      function createTorus() {
+         var geometry = new THREE.BoxBufferGeometry(2, 2, 2);
+         for (var i = 0; i < rings; i++) {
+            var u = i / rings * Math.PI * 2;
+            var ring = new THREE.Object3D();
+            ring.position.x = torusRadius * Math.cos(u);
+            ring.position.z = torusRadius * Math.sin(u);
+            var colorIndex = Math.round(Math.abs(noise.simplex2(Math.cos(u) * 0.5, Math.sin(u) * 0.5)) * 180);
+            var color = new THREE.Color("hsl(" + colorIndex + ",50%,50%)");
+            var material = new THREE.MeshLambertMaterial({
+               color: color
+            });
+            for (var j = 0; j < detail; j++) {
+               var v = j / detail * Math.PI * 2;
+               var x = torusDiameter * Math.cos(v) * Math.cos(u);
+               var y = torusDiameter * Math.sin(v);
+               var z = torusDiameter * Math.cos(v) * Math.sin(u);
+               var size = (Math.random() * 5) + 0.1;
+               var cube = new THREE.Mesh(geometry, material);
+               cube.scale.set(size, size, size);
+               cube.position.set(x, y, z);
+               var rotation = (Math.random() - 0.5) * Math.PI * 4;
+               cube.rotation.set(rotation, rotation, rotation);
+               ring.add(cube);
+            }
+            torus.add(ring);
+         }
+      }
+
+      function render() {
+         requestAnimationFrame(render);
+         camera.lookAt(light.position);
+         renderer.render(scene, camera);
+      }
+
+      createTorus();
+      requestAnimationFrame(render);
+      gsap.registerPlugin(ScrollTrigger);
+
+      if (window.innerWidth > 768) {
+         let sections = gsap.utils.toArray(".slide");
+
+         gsap.to(sections, {
+            xPercent: -100 * (sections.length - 1),
+            ease: "none",
+            scrollTrigger: {
+               trigger: ".horizontal-sliders",
+               pin: ".main",
+               pinSpacing: true,
+               scrub: 1,
+               end: "+=3000",
+            }
+         });
+
+         gsap.to('.next-block', {
+            backgroundColor: 'tomato',
+            scrollTrigger: {
+               trigger: '.next-block',
+               pinnedContainer: ".main",
+               start: 'top 50%',
+               toggleActions: 'play none reset none',
+            }
+         });
+      }
 </script>
 </body>
 </html>
