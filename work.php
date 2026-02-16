@@ -3,33 +3,33 @@
 
 <head>
     <?php
-    $pageTitle = 'Farrukh Ahmed Khan | Projects';
-    $pageDescription = 'Selected web and mobile projects built by Farrukh Ahmed Khan using React.js, Node.js, TypeScript, MongoDB, and MySQL.';
-    $pagePath = 'work.php';
-    include("includes/compatibility.php");
-    include("includes/seo.php");
-    include("includes/project-data.php");
-    $content = load_project_content();
+        $pageTitle       = 'Farrukh Ahmed Khan | Projects';
+        $pageDescription = 'Selected web and mobile projects built by Farrukh Ahmed Khan using React.js, Node.js, TypeScript, MongoDB, and MySQL.';
+        $pagePath        = 'work.php';
+        include "includes/compatibility.php";
+        include "includes/seo.php";
+        include "includes/project-data.php";
+        $content = load_project_content();
     ?>
     <link rel="shortcut icon" href="assets/images/vector1.png" />
-    <?php include("includes/style.php"); ?>
+    <?php include "includes/style.php"; ?>
     <script type="application/ld+json">
     <?php
-    $itemList = [
-        '@context' => 'https://schema.org',
-        '@type' => 'ItemList',
-        'itemListElement' => []
-    ];
-    $index = 1;
-    foreach ($content['projects'] as $p) {
-        $itemList['itemListElement'][] = [
-            '@type' => 'ListItem',
-            'position' => $index++,
-            'name' => $p['title'],
-            'url' => $p['live_url']
+        $itemList = [
+            '@context'        => 'https://schema.org',
+            '@type'           => 'ItemList',
+            'itemListElement' => [],
         ];
-    }
-    echo json_encode($itemList, JSON_UNESCAPED_SLASHES);
+        $index = 1;
+        foreach ($content['projects'] as $p) {
+            $itemList['itemListElement'][] = [
+                '@type'    => 'ListItem',
+                'position' => $index++,
+                'name'     => $p['title'],
+                'url'      => $p['live_url'],
+            ];
+        }
+        echo json_encode($itemList, JSON_UNESCAPED_SLASHES);
     ?>
     </script>
 
@@ -130,8 +130,37 @@
 </head>
 
 <body>
-    <?php include("includes/header.php"); ?>
+    <?php include "includes/header.php"; ?>
     <div class="circle-cursor"></div>
+
+    <section class="firstSec">
+      <!-- id="particle-canvas" -->
+      <canvas></canvas>
+      <div class="overlay">
+
+      </div>
+      <div class="container-fluid" style="z-index:10 !important">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="banner-content">
+                   <h1 class="wow bounceIn" style="animation-delay: 0.3s; visibility: visible; animation-name: bounceIn;">
+                    Projects
+                  </h1>
+                  <div class="Iam">
+                     <p>
+                        Grow with Us Make Your business world wide
+                     </p>
+                  </div>
+                  <div class="p2 mt-35 widthCus">
+                     <p>Ready to hand over your new project to our masterminds?</p>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </section>
 
     <section class="service-wrapper">
         <div class="container-fluid">
@@ -198,8 +227,8 @@
         </div>
     </section>
 
-    <?php include("includes/footer.php"); ?>
-    <?php include("includes/scripts.php"); ?>
+    <?php include "includes/footer.php"; ?>
+    <?php include "includes/scripts.php"; ?>
     <script>
         $(document).ready(function() {
             $(".filter").click(function() {
@@ -210,6 +239,8 @@
                 $(".filter-content" + filterNumber).show();
             });
         });
+
+        
     </script>
 </body>
 

@@ -1,75 +1,103 @@
 <?php
-session_start();
+    session_start();
 
-$errors = [];
-$successMessage = '';
-$name = '';
-$email = '';
-$subject = '';
-$message = '';
+    $errors         = [];
+    $successMessage = '';
+    $name           = '';
+    $email          = '';
+    $subject        = '';
+    $message        = '';
 
-if (empty($_SESSION['contact_csrf'])) {
+    if (empty($_SESSION['contact_csrf'])) {
     $_SESSION['contact_csrf'] = bin2hex(random_bytes(16));
-}
+    }
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $token = $_POST['csrf_token'] ?? '';
-    if (!hash_equals($_SESSION['contact_csrf'], $token)) {
+    if (! hash_equals($_SESSION['contact_csrf'], $token)) {
         $errors[] = 'Invalid form token. Please refresh and try again.';
     }
 
-    $name = trim($_POST['name'] ?? '');
-    $email = trim($_POST['email'] ?? '');
+    $name    = trim($_POST['name'] ?? '');
+    $email   = trim($_POST['email'] ?? '');
     $subject = trim($_POST['subject'] ?? '');
     $message = trim($_POST['message'] ?? '');
 
     if ($name === '' || strlen($name) < 2) {
         $errors[] = 'Please enter a valid name.';
     }
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    if (! filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $errors[] = 'Please enter a valid email address.';
     }
     if ($message === '' || strlen($message) < 10) {
         $errors[] = 'Message should be at least 10 characters.';
     }
 
-    if (!$errors) {
-        $to = 'khanfarrukh200@gmail.com';
+    if (! $errors) {
+        $to          = 'khanfarrukh200@gmail.com';
         $safeSubject = $subject !== '' ? $subject : 'New Portfolio Contact Message';
-        $body = "Name: {$name}\nEmail: {$email}\nSubject: {$safeSubject}\n\nMessage:\n{$message}";
-        $headers = "From: {$email}\r\nReply-To: {$email}\r\nX-Mailer: PHP/" . phpversion();
+        $body        = "Name: {$name}\nEmail: {$email}\nSubject: {$safeSubject}\n\nMessage:\n{$message}";
+        $headers     = "From: {$email}\r\nReply-To: {$email}\r\nX-Mailer: PHP/" . phpversion();
 
         if (@mail($to, $safeSubject, $body, $headers)) {
-            $successMessage = 'Thanks, your message was sent successfully.';
-            $name = '';
-            $email = '';
-            $subject = '';
-            $message = '';
+            $successMessage           = 'Thanks, your message was sent successfully.';
+            $name                     = '';
+            $email                    = '';
+            $subject                  = '';
+            $message                  = '';
             $_SESSION['contact_csrf'] = bin2hex(random_bytes(16));
         } else {
             $errors[] = 'Message could not be sent from this server. Please email directly at khanfarrukh200@gmail.com.';
         }
     }
-}
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <?php
-    $pageTitle = 'Farrukh Ahmed Khan | Contact';
-    $pageDescription = 'Contact Farrukh Ahmed Khan for Full Stack and React Native development projects.';
-    $pagePath = 'contact.php';
-    include("includes/compatibility.php");
-    include("includes/seo.php");
+        $pageTitle       = 'Farrukh Ahmed Khan | Contact';
+        $pageDescription = 'Contact Farrukh Ahmed Khan for Full Stack and React Native development projects.';
+        $pagePath        = 'contact.php';
+        include "includes/compatibility.php";
+        include "includes/seo.php";
     ?>
     <link rel="shortcut icon" href="assets/images/vector1.png" />
-    <?php include("includes/style.php"); ?>
+    <?php include "includes/style.php"; ?>
 </head>
 
 <body>
-    <?php include("includes/header.php"); ?>
+    <?php include "includes/header.php"; ?>
     <div class="circle-cursor"></div>
+     <section class="firstSec">
+      <!-- id="particle-canvas" -->
+      <canvas></canvas>
+      <div class="overlay">
+
+      </div>
+      <div class="container-fluid" style="z-index:10 !important">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="banner-content">
+                   <h1 class="wow bounceIn" style="animation-delay: 0.3s; visibility: visible; animation-name: bounceIn;">
+                     Contact Me
+                  </h1>
+                  <div class="Iam">
+                     <p>
+                        Grow with Us Make Your business world wide
+                     </p>
+                  </div>
+                  <div class="p2 mt-35 widthCus">
+                     <p>Ready to hand over your new project to our masterminds?</p>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </section>
     <section class="softnox-contact-form-wrapper r1 get_in_touch">
         <div class="container-fluid">
             <div class="row">
@@ -167,8 +195,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         </div>
     </section>
-    <?php include("includes/footer.php"); ?>
-    <?php include("includes/scripts.php"); ?>
+    <?php include "includes/footer.php"; ?>
+    <?php include "includes/scripts.php"; ?>
+    <script>
+        
+    </script>
 </body>
 
 </html>

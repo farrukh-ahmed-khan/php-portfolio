@@ -3,52 +3,148 @@
 
 <head>
     <?php
-    $pageTitle = 'Farrukh Ahmed Khan | About';
-    $pageDescription = 'About Farrukh Ahmed Khan, Full Stack Developer with experience in web and mobile applications, APIs, cloud, and scalable product development.';
-    $pagePath = 'about.php';
-    include("includes/compatibility.php");
-    include("includes/seo.php");
+        $pageTitle       = 'Farrukh Ahmed Khan | About';
+        $pageDescription = 'About Farrukh Ahmed Khan, Full Stack Developer with experience in web and mobile applications, APIs, cloud, and scalable product development.';
+        $pagePath        = 'about.php';
+        include "includes/compatibility.php";
+        include "includes/seo.php";
     ?>
     <link rel="shortcut icon" href="assets/images/vector1.png" />
-    <?php include("includes/style.php"); ?>
+    <?php include "includes/style.php"; ?>
 
 
-    
+
 </head>
 
 <body>
-    <?php include("includes/header.php"); ?>
+    <?php include "includes/header.php"; ?>
     <div class="circle-cursor"></div>
 
-    
-    <section class="about_us r1">
-        <div class="container-fluid">
-            <div class="row d-flex align-items-center">
-                <div class="col-lg-6">
-                    <div class="content-head">
-                        <h5>
-                            About
-                        </h5>
-                    </div>
-                    <div class="content-about-para">
+    <section class="firstSec">
+      <!-- id="particle-canvas" -->
+      <canvas></canvas>
+      <div class="overlay">
+
+      </div>
+      <div class="container-fluid" style="z-index:10 !important">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="banner-content">
+                   <h1 class="wow bounceIn" style="animation-delay: 0.3s; visibility: visible; animation-name: bounceIn;">
+                     About Me
+                  </h1>
+                  <div class="Iam">
+                     <p>
+                        Grow with Us Make Your business world wide
+                     </p>
+                  </div>
+                  <div class="p2 mt-35 widthCus">
+                     <p>Ready to hand over your new project to our masterminds?</p>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </section>
+
+
+   <section class="about-us about_after">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-lg-6 col-md-12 pb-4">
+               <div class="row">
+                  <div class="col-md-12 ">
+                     <div class="about_us_head">
+                        <h4 class="wow slideInLeft" style="visibility: visible; animation-name: slideInLeft;">ABOUT ME</h4>
+                     </div>
+                     <div class="about_subhead">
+                        <h3 class="wow flipInY" style="animation-delay: 0.2s; visibility: visible; animation-name: flipInY;">I Build</h3>
+                        <h3 class="wow bounceIn" style="animation-delay: 0.3s; visibility: visible; animation-name: bounceIn;">
+                           SCALABLE
+                        </h3>
+                        <h3 class="wow flipInY" style="animation-delay: 0.4s; visibility: visible; animation-name: flipInY;">
+                           scalable products.
+                        </h3>
+                     </div>
+                     <div class="bdr_btm wow slideInLeft" style="animation-delay: 0.2s; visibility: visible; animation-name: slideInLeft;">
+                     </div>
+                     <div class="about_us_para_head mb-3 wow slideInLeft" style="animation-delay: 0.6s; visibility: visible; animation-name: slideInLeft;">
+                        <span>Full Stack + React Native Developer</span>
+                     </div>
+                     <div class="about_us_para wow slideInLeft" style="animation-delay: 1s; visibility: visible; animation-name: slideInLeft;">
                         <p>
-                            A skilled and motivated Full Stack Developer with hands-on experience in React.js, Node.js, TypeScript, REST APIs, MongoDB, and MySQL.
-                            I build responsive, user-friendly web and mobile applications and also develop mobile apps with React Native.
-                            My focus is clean architecture, scalable systems, and strong product execution in agile teams.
+                           A skilled and motivated Full Stack Developer with hands-on experience in React.js, Node.js, TypeScript, REST APIs, MongoDB, and MySQL. I develop responsive, user-friendly, and visually appealing applications for web and mobile platforms.
                         </p>
-                        <p style="margin-top: 14px;">
+                        <p class="mt-3">
+                           I also build mobile applications with React Native and collaborate closely with teams to deliver maintainable, high-performance products.
+                        </p>
+                     </div>
+                     <p style="margin-top: 14px;">
                             <a href="download-cv.php" class="cv-btn" data-track-click="cv-about">Download CV</a>
                         </p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="img-wrapper">
-                        <img src="assets/images/about-sign-banner.webp" alt="">
-                    </div>
-                </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
+            <div class="col-lg-6 col-md-12">
+               <div class="cards-wrapper">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-lg-6 col-md-12 mb-3">
+                           <div class="card crd1 wow bounceIn" style="animation-delay: 0.2s; width: 100%; height: 100%; visibility: visible; animation-name: bounceIn;">
+                              <div class="wow flip" style="animation-delay: 1s; visibility: visible; animation-name: flip;">
+                                 <img src="assets/images/video_icon.png" class="card-img-top" alt="..." loading="lazy" decoding="async">
+                              </div>
+
+                              <div class="card-body">
+                                 <h5 class="card-title">Frontend Engineering</h5>
+                                 <p class="card-text">React.js, Next.js, Redux, Tailwind CSS, MUI</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 mb-3">
+                           <div class="card crd2 wow bounceIn" style="animation-delay: 0.6s; width: 100%; height: 100%; visibility: visible; animation-name: bounceIn;">
+                              <div class="wow flip" style="animation-delay: 1.5s; visibility: visible; animation-name: flip;">
+                                 <img src="assets/images/ux.png" class="card-img-top" alt="..." loading="lazy" decoding="async">
+                              </div>
+                              <div class="card-body">
+                                 <h5 class="card-title">Backend &amp; APIs</h5>
+                                 <p class="card-text">Node.js, Express.js, NestJS, REST API Integration</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 mb-3">
+                           <div class="card crd3 wow bounceIn" style="animation-delay: 0.9s; width: 100%; height: 100%; visibility: visible; animation-name: bounceIn;">
+                              <div class="wow flip" style="animation-delay: 2s; visibility: visible; animation-name: flip;">
+                                 <img src="assets/images/Web_icon.png" class="card-img-top" alt="..." loading="lazy" decoding="async">
+                              </div>
+                              <div class="card-body">
+                                 <h5 class="card-title">Databases &amp; Cloud</h5>
+                                 <p class="card-text">MongoDB, MySQL, Firebase Database, AWS</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 mb-3">
+                           <div class="card crd4 wow bounceIn" style="animation-delay: 1.2s; width: 100%; height: 100%; visibility: visible; animation-name: bounceIn;">
+                              <div class="wow flip" style="animation-delay: 2.5s; visibility: visible; animation-name: flip;">
+                                 <img src="assets/images/graphic_icon.png" class="card-img-top" alt="..." loading="lazy" decoding="async">
+                              </div>
+                              <div class="card-body">
+                                 <h5 class="card-title">Mobile Apps</h5>
+                                 <p class="card-text">React Native, API Integration, Cross-platform Apps</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+ 
     <section class="about-office-numbers">
         <div class="container-fluid">
             <div class="row">
@@ -103,157 +199,8 @@
             </div>
         </div>
     </section>
-    
-    <section class="softnox-gallery">
-      <div class="container-fluid">
-         <div class="row d-flex align-items-center">
-            <div class="col-md-9">
-               <div class="softnox-gallery-head">
-                  <h4 class="wow slideInLeft" style="animation-delay: 0.3s; visibility: visible; animation-name: slideInLeft;">Gallery</h4>
-               </div>
-            </div>
-            <div class="col-md-3">
-               <div class="softnox-gallery-btn">
-                  <a href="#" class="wow slideInRight" style="animation-delay: 0.6s; visibility: visible; animation-name: slideInRight;">
-                     <p>More</p>
-                     <img src="assets/images/more-icon.png" alt="">
-                  </a>
-               </div>
-            </div>
-            <div class="marquee mt-5 wow slideInRight" style="animation-delay: 0.3s; visibility: visible; animation-name: slideInRight;">
-               <div class="marquee-content" id="marqueeContent">
-                  <div class="marquee-item">
-                     <img src="assets/images/gallery1.png" alt="">
-                  </div>
 
-                  <div class="marquee-item">
-                     <img src="assets/images/gallery2.png" alt="">
-                  </div>
-
-                  <div class="marquee-item">
-                     <img src="assets/images/gallery3.png" alt="">
-                  </div>
-
-                  <div class="marquee-item">
-                     <img src="assets/images/gallery4.png" alt="">
-                  </div>
-
-                  <div class="marquee-item">
-                     <img src="assets/images/gallery5.png" alt="">
-                  </div>
-
-                  <div class="marquee-item">
-                     <img src="assets/images/gallery1.png" alt="">
-                  </div>
-
-                  <div class="marquee-item">
-                     <img src="assets/images/gallery2.png" alt="">
-                  </div>
-
-                  <div class="marquee-item">
-                     <img src="assets/images/gallery3.png" alt="">
-                  </div>
-                  <div class="marquee-item">
-                     <img src="assets/images/gallery1.png" alt="">
-                  </div>
-
-                  <div class="marquee-item">
-                     <img src="assets/images/gallery2.png" alt="">
-                  </div>
-
-                  <div class="marquee-item">
-                     <img src="assets/images/gallery3.png" alt="">
-                  </div>
-
-                  <div class="marquee-item">
-                     <img src="assets/images/gallery4.png" alt="">
-                  </div>
-
-                  <div class="marquee-item">
-                     <img src="assets/images/gallery5.png" alt="">
-                  </div>
-
-                  <div class="marquee-item">
-                     <img src="assets/images/gallery1.png" alt="">
-                  </div>
-
-                  <div class="marquee-item">
-                     <img src="assets/images/gallery2.png" alt="">
-                  </div>
-
-                  <div class="marquee-item">
-                     <img src="assets/images/gallery3.png" alt="">
-                  </div>
-               </div>
-            </div>
-            <div class="marquee-left mt-4 mb-5 wow slideInLeft" style="animation-delay: 0.6s; visibility: visible; animation-name: slideInLeft;">
-               <div class="marquee-content-left" id="marqueeContent2">
-                  <div class="marquee-item-left">
-                     <img src="assets/images/gallery11.png" alt="">
-                  </div>
-
-                  <div class="marquee-item-left">
-                     <img src="assets/images/gallery12.png" alt="">
-                  </div>
-
-                  <div class="marquee-item-left">
-                     <img src="assets/images/gallery13.png" alt="">
-                  </div>
-
-                  <div class="marquee-item-left">
-                     <img src="assets/images/gallery14.png" alt="">
-                  </div>
-
-                  <div class="marquee-item-left">
-                     <img src="assets/images/gallery15.png" alt="">
-                  </div>
-
-                  <div class="marquee-item-left">
-                     <img src="assets/images/gallery11.png" alt="">
-                  </div>
-
-                  <div class="marquee-item-left">
-                     <img src="assets/images/gallery12.png" alt="">
-                  </div>
-
-                  <div class="marquee-item-left">
-                     <img src="assets/images/gallery13.png" alt="">
-                  </div>
-                  <div class="marquee-item-left">
-                     <img src="assets/images/gallery11.png" alt="">
-                  </div>
-
-                  <div class="marquee-item-left">
-                     <img src="assets/images/gallery12.png" alt="">
-                  </div>
-
-                  <div class="marquee-item-left">
-                     <img src="assets/images/gallery13.png" alt="">
-                  </div>
-
-                  <div class="marquee-item-left">
-                     <img src="assets/images/gallery14.png" alt="">
-                  </div>
-
-                  <div class="marquee-item-left">
-                     <img src="assets/images/gallery15.png" alt="">
-                  </div>
-
-                  <div class="marquee-item-left">
-                     <img src="assets/images/gallery11.png" alt="">
-                  </div>
-
-                  <div class="marquee-item-left">
-                     <img src="assets/images/gallery12.png" alt="">
-                  </div>
-
-                  <div class="marquee-item-left">
-                     <img src="assets/images/gallery3.png" alt="">
-                  </div>
-               </div>
-            </div>
-         </div>
-   </div></section>
+ 
      <section class="testimonial-sec">
       <div class="container-fluid">
          <div class="row">
@@ -469,8 +416,8 @@
          </div>
       </div>
    </section>
-    <?php include("includes/footer.php"); ?>
-    <?php include("includes/scripts.php"); ?>
+    <?php include "includes/footer.php"; ?>
+    <?php include "includes/scripts.php"; ?>
     <script>
     const marqueeContent = document.querySelector('.marquee-content');
 
@@ -491,6 +438,125 @@ marqueeContent2.addEventListener('mouseenter', () => {
 marqueeContent2.addEventListener('mouseleave', () => {
   marqueeContent2.classList.remove('paused');
 });
+
+
+
+var ww = window.innerWidth,
+         wh = window.innerHeight;
+      var torusRadius = 200;
+      var torusDiameter = 25;
+      var rings = 180;
+      var detail = 30;
+
+      var renderer = new THREE.WebGLRenderer({
+         canvas: document.querySelector("canvas"),
+         antialias: true
+      });
+      renderer.setSize(ww, wh);
+
+      var scene = new THREE.Scene();
+      scene.fog = new THREE.Fog(0x000000, torusRadius * 0.8, torusRadius * 1.1);
+
+      var camera = new THREE.PerspectiveCamera(60, ww / wh, 1, torusRadius * 1.1);
+      camera.position.set(Math.cos(0) * torusRadius, 0, Math.sin(0) * torusRadius);
+
+      var light = new THREE.PointLight(0xffffff, 2, 150);
+      light.position.set(Math.cos(-Math.PI * 0.3) * torusRadius, 0, Math.sin(-Math.PI * 0.3) * torusRadius);
+      scene.add(light);
+
+      TweenMax.to(light.position, 6, {
+         x: Math.cos(Math.PI * 0.3) * torusRadius,
+         z: Math.sin(Math.PI * 0.3) * torusRadius,
+         ease: Power2.easeInOut,
+         repeat: -1,
+         yoyo: true
+      });
+
+      window.addEventListener("resize", function () {
+         ww = window.innerWidth;
+         wh = window.innerHeight;
+
+         camera.aspect = ww / wh;
+         camera.updateProjectionMatrix();
+
+         renderer.setSize(ww, wh);
+      });
+      var mouse = new THREE.Vector2(0, 0);
+
+      var torus = new THREE.Object3D();
+      TweenMax.to(torus.rotation, 90, {
+         y: Math.PI * 2,
+         ease: Linear.easeNone,
+         repeat: -1
+      });
+      scene.add(torus);
+
+      function createTorus() {
+         var geometry = new THREE.BoxBufferGeometry(2, 2, 2);
+         for (var i = 0; i < rings; i++) {
+            var u = i / rings * Math.PI * 2;
+            var ring = new THREE.Object3D();
+            ring.position.x = torusRadius * Math.cos(u);
+            ring.position.z = torusRadius * Math.sin(u);
+            var colorIndex = Math.round(Math.abs(noise.simplex2(Math.cos(u) * 0.5, Math.sin(u) * 0.5)) * 180);
+            var color = new THREE.Color("hsl(" + colorIndex + ",50%,50%)");
+            var material = new THREE.MeshLambertMaterial({
+               color: color
+            });
+            for (var j = 0; j < detail; j++) {
+               var v = j / detail * Math.PI * 2;
+               var x = torusDiameter * Math.cos(v) * Math.cos(u);
+               var y = torusDiameter * Math.sin(v);
+               var z = torusDiameter * Math.cos(v) * Math.sin(u);
+               var size = (Math.random() * 5) + 0.1;
+               var cube = new THREE.Mesh(geometry, material);
+               cube.scale.set(size, size, size);
+               cube.position.set(x, y, z);
+               var rotation = (Math.random() - 0.5) * Math.PI * 4;
+               cube.rotation.set(rotation, rotation, rotation);
+               ring.add(cube);
+            }
+            torus.add(ring);
+         }
+      }
+
+      function render() {
+         requestAnimationFrame(render);
+         camera.lookAt(light.position);
+         renderer.render(scene, camera);
+      }
+
+      createTorus();
+      requestAnimationFrame(render);
+      gsap.registerPlugin(ScrollTrigger);
+
+      if (window.innerWidth > 768) {
+         let sections = gsap.utils.toArray(".slide");
+
+         gsap.to(sections, {
+            xPercent: -100 * (sections.length - 1),
+            ease: "none",
+            scrollTrigger: {
+               trigger: ".horizontal-sliders",
+               pin: ".main",
+               pinSpacing: true,
+               scrub: 1,
+               end: "+=3000",
+            }
+         });
+
+         gsap.to('.next-block', {
+            backgroundColor: 'tomato',
+            scrollTrigger: {
+               trigger: '.next-block',
+               pinnedContainer: ".main",
+               start: 'top 50%',
+               toggleActions: 'play none reset none',
+            }
+         });
+      }
+
+
     </script>
 
 </body>

@@ -3,14 +3,14 @@
 
 <head>
     <?php
-    $pageTitle = 'Farrukh Ahmed Khan | Skills and Services';
-    $pageDescription = 'Technical skills and services including React.js, Next.js, Node.js, Express.js, REST APIs, MongoDB, MySQL, AWS, and React Native.';
-    $pagePath = 'services.php';
-    include("includes/compatibility.php");
-    include("includes/seo.php");
+        $pageTitle       = 'Farrukh Ahmed Khan | Skills and Services';
+        $pageDescription = 'Technical skills and services including React.js, Next.js, Node.js, Express.js, REST APIs, MongoDB, MySQL, AWS, and React Native.';
+        $pagePath        = 'services.php';
+        include "includes/compatibility.php";
+        include "includes/seo.php";
     ?>
     <link rel="shortcut icon" href="assets/images/vector1.png" />
-    <?php include("includes/style.php"); ?>
+    <?php include "includes/style.php"; ?>
 
     <style>
         .page-header {
@@ -467,8 +467,36 @@
 </head>
 
 <body>
-    <?php include("includes/header.php"); ?>
+    <?php include "includes/header.php"; ?>
     <div class="circle-cursor"></div>
+    <section class="firstSec">
+      <!-- id="particle-canvas" -->
+      <canvas></canvas>
+      <div class="overlay">
+
+      </div>
+      <div class="container-fluid" style="z-index:10 !important">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="banner-content">
+                   <h1 class="wow bounceIn" style="animation-delay: 0.3s; visibility: visible; animation-name: bounceIn;">
+                     Services I Provide For You
+                  </h1>
+                  <div class="Iam">
+                     <p>
+                        Grow with Us Make Your business world wide
+                     </p>
+                  </div>
+                  <div class="p2 mt-35 widthCus">
+                     <p>Ready to hand over your new project to our masterminds?</p>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </section>
     <header class="page-header section-padding pb-0" style="transform: translate(0px, 0px);">
         <div class="container mt-80" style="opacity: 1; transform: translate(0px, 0px);">
             <div class="row">
@@ -740,8 +768,8 @@
         </div>
     </section>
 
-    <?php include("includes/footer.php"); ?>
-    <?php include("includes/scripts.php"); ?>
+    <?php include "includes/footer.php"; ?>
+    <?php include "includes/scripts.php"; ?>
     <script>
         // function changeImage(event) {
         //     var image = event.target;
