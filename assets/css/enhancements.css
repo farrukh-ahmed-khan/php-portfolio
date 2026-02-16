@@ -1,0 +1,89 @@
+.cv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #f5ea14;
+  color: #f5ea14;
+  padding: 8px 14px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.cv-btn:hover {
+  background: rgba(245, 234, 20, 0.16);
+  color: #fff;
+}
+
+.hire-me-sticky {
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hire-me-sticky a,
+.hire-me-sticky button {
+  border: 1px solid #f5ea14;
+  background: rgba(0, 21, 17, 0.92);
+  color: #f5ea14;
+  border-radius: 999px;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.hire-me-sticky button {
+  cursor: pointer;
+}
+
+.hire-me-sticky .actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media (max-width: 680px) {
+  .hire-me-sticky .actions {
+    display: none;
+  }
+
+  .hire-me-sticky.open .actions {
+    display: flex;
+  }
+}
+
+.form-alert {
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.form-alert.error {
+  border: 1px solid rgba(255, 120, 120, 0.7);
+  background: rgba(100, 20, 20, 0.35);
+  color: #ffd6d6;
+}
+
+.form-alert.success {
+  border: 1px solid rgba(134, 255, 196, 0.7);
+  background: rgba(20, 90, 60, 0.35);
+  color: #d6ffe8;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

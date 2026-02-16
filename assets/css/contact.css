@@ -1,0 +1,181 @@
+.softnox-contact-banner {
+  padding: 100px 157px;
+  border-top: 1px solid #e4dc14;
+  border-bottom: 1px solid #e4dc14;
+}
+.softnox-contact-banner-content h1 {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+.softnox-contact-banner-content h1:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff;
+}
+.softnox-contact-banner-content p {
+  font-weight: 600;
+  line-height: 1.3;
+  font-size: 32px;
+  color: #fff;
+  font-family: "Gravedigger";
+  word-spacing: 5px;
+  letter-spacing: 3px;
+}
+
+.softnox-contact-banner-content2 p {
+  line-height: 1.8;
+  font-size: 16px;
+  font-weight: 300;
+  color: #ddd;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  margin-top: 30px;
+}
+
+/* contact form section */
+.softnox-contact-form-wrapper {
+    padding: 150px 157px;
+    position: relative;
+  
+}
+.softnox-contact-form-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/vectors.png);
+    background-position: right;
+    background-size: contain;
+    opacity: 0.1;
+    pointer-events: none;
+    background-repeat: no-repeat;
+  }
+.sec-lg-head .dot-titl-non {
+  padding: 7px 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+.sec-lg-head h2 {
+  font-weight: 600;
+  line-height: 1.3;
+  font-size: 32px;
+  color: #fff;
+  font-family: "Gravedigger";
+  word-spacing: 5px;
+  letter-spacing: 3px;
+}
+
+.sec-lg-head p {
+  line-height: 1.8;
+  font-size: 16px;
+  font-weight: 300;
+  color: #ddd;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.underline a {
+  text-decoration: underline !important;
+  color: inherit;
+  font-size: 30px !important;
+  font-weight: 600;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.social-text {
+  margin-top: 50px;
+}
+ul.social-text li a {
+  display: inline-block;
+  margin-right: 20px;
+  color: #ddd;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+}
+.mt-10 {
+  margin-top: 10px !important;
+}
+.mt-20 {
+  margin-top: 20px !important;
+}
+.mt-30 {
+  margin-top: 30px !important;
+}
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+.mr-30 {
+  margin-right: 30px !important;
+}
+.mb-80 {
+  margin-bottom: 80px !important;
+}
+
+.softnox-contact-form-wrapper input,
+.softnox-contact-form-wrapper textarea {
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background: transparent;
+  color: #fff;
+  padding: 15px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.softnox-contact-form-wrapper textarea {
+  min-height: 180px;
+}
+.butn.butn-bord {
+  border-radius: 2px;
+    border: 3px solid #f5ea14;
+    padding: 10px 25px;
+    color: #fff;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.465px;
+    text-transform: uppercase;
+    background-color: transparent;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+}
+.butn.butn-bord:hover {
+    background-color: #f5ea14;
+    color: #000;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out !important;
+    transform: scale(1.1);
+}
+@media (max-width: 375px){
+  .softnox-contact-form-wrapper{
+    padding: 100px 0px;
+  }
+}

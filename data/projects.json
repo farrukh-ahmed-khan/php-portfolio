@@ -1,0 +1,184 @@
+{
+  "domains": [
+    {
+      "title": "E-Commerce Platforms",
+      "description": "Scalable platforms for catalog, checkout, payments, and role-based operations."
+    },
+    {
+      "title": "Wellness and Healthcare",
+      "description": "Patient-focused portals with profile management, appointments, and treatment workflows."
+    },
+    {
+      "title": "Sports and Coaching",
+      "description": "Role-based ecosystems for athletes, coaches, and administrative approval rules."
+    },
+    {
+      "title": "Food Ordering Systems",
+      "description": "Custom ordering flows with user roles, product customization, and purchase management."
+    },
+    {
+      "title": "Digital Publishing",
+      "description": "Book and digital content commerce with payment integrations and user dashboards."
+    },
+    {
+      "title": "Aviation and Corporate",
+      "description": "Enterprise content platforms for services, fleet data, and operational visibility."
+    }
+  ],
+  "stacks": [
+    {
+      "title": "React.js and Laravel",
+      "description": "Modern frontend with robust backend services and SQL data models."
+    },
+    {
+      "title": "React.js and Node.js",
+      "description": "SPA architecture with API-first backend services and integration workflows."
+    },
+    {
+      "title": "Node.js and Express.js APIs",
+      "description": "REST APIs, authentication modules, and scalable service architecture."
+    },
+    {
+      "title": "MongoDB and MySQL",
+      "description": "Document and relational database designs tuned for performance and maintainability."
+    },
+    {
+      "title": "Redux Toolkit and Context API",
+      "description": "Predictable state management for complex interfaces and user journeys."
+    },
+    {
+      "title": "React Native Mobile Apps",
+      "description": "Cross-platform app development integrated with production-grade APIs."
+    },
+    {
+      "title": "AWS Cloud-ready Deployments",
+      "description": "Cloud deployment practices for reliability, scaling, and operations."
+    },
+    {
+      "title": "REST API Integration",
+      "description": "Secure third-party and internal service integrations with clean contracts."
+    }
+  ],
+  "projects": [
+    {
+      "slug": "amz-geeks",
+      "title": "AMZ Geeks",
+      "domain": "E-Commerce Platforms",
+      "summary": "Service platform enabling Amazon, Walmart, and Shopify operations with dashboard-based payment records.",
+      "tech": "React.js, Laravel, MySQL, Redux Toolkit, Stripe",
+      "live_url": "https://amzgeeks.com/",
+      "problem": "Businesses needed a consolidated platform to manage marketplace services and payment tracking.",
+      "role": "Full Stack Engineer",
+      "outcomes": [
+        "Implemented frontend workflows with React.js and Redux Toolkit.",
+        "Integrated payment flows using Stripe.",
+        "Connected backend APIs with MySQL data retrieval."
+      ],
+      "screenshots": [
+        "assets/images/card1.jpg",
+        "assets/images/card2.jpg",
+        "assets/images/card3.jpg"
+      ]
+    },
+    {
+      "slug": "texas-center-wellness",
+      "title": "Texas Center Wellness",
+      "domain": "Wellness and Healthcare",
+      "summary": "Wellness and integrative medicine portal for therapies, appointments, and treatment personalization.",
+      "tech": "React.js, Redux Toolkit, Node.js, MongoDB",
+      "live_url": "https://texascenterwellness.com/",
+      "problem": "The client required a responsive healthcare portal to manage therapy programs and consultations.",
+      "role": "Full Stack Engineer",
+      "outcomes": [
+        "Built an interactive React.js frontend with stateful treatment workflows.",
+        "Developed REST APIs for appointments and therapy modules.",
+        "Structured MongoDB models for profile and treatment-preference data."
+      ],
+      "screenshots": [
+        "assets/images/card1.jpg",
+        "assets/images/card2.jpg",
+        "assets/images/card3.jpg"
+      ]
+    },
+    {
+      "slug": "four-coaches",
+      "title": "Four Coaches",
+      "domain": "Sports and Coaching",
+      "summary": "Role-based platform connecting athletes and coaches with profile approval workflows.",
+      "tech": "React.js, Node.js, MongoDB, Redux, Context API",
+      "live_url": "https://stage1001.devdesignbuild.com/",
+      "problem": "The business needed a multi-role system with admin-driven profile lifecycle controls.",
+      "role": "Full Stack Engineer",
+      "outcomes": [
+        "Delivered role-based UX for admins, athletes, and coaches.",
+        "Integrated API flows with MongoDB-backed profiles.",
+        "Improved usability via Redux and Context-driven state architecture."
+      ],
+      "screenshots": [
+        "assets/images/card1.jpg",
+        "assets/images/card2.jpg",
+        "assets/images/card3.jpg"
+      ]
+    },
+    {
+      "slug": "pepperoni-pizza",
+      "title": "Pepperoni Pizza",
+      "domain": "Food Ordering Systems",
+      "summary": "Online pizza ordering platform supporting customization and three user roles.",
+      "tech": "React.js, Laravel, MySQL, Redux Toolkit",
+      "live_url": "https://brian-pizza-man-frontend.devdesignbuild.com/",
+      "problem": "The client needed customizable product ordering with operational controls for multiple user roles.",
+      "role": "Frontend and Integration Engineer",
+      "outcomes": [
+        "Implemented product customization and ordering flows.",
+        "Connected frontend actions with Laravel API endpoints.",
+        "Enabled scalable state handling with Redux Toolkit."
+      ],
+      "screenshots": [
+        "assets/images/card1.jpg",
+        "assets/images/card2.jpg",
+        "assets/images/card3.jpg"
+      ]
+    },
+    {
+      "slug": "scottmiller",
+      "title": "Scottmiller",
+      "domain": "Digital Publishing",
+      "summary": "Book commerce platform with e-book dashboard and external print/payment integrations.",
+      "tech": "React.js, Laravel, Redux Toolkit, Lulu API, SquareUp",
+      "live_url": "https://scottlmillerbooks.com/",
+      "problem": "The store required unified purchase, print-on-demand, and digital content management.",
+      "role": "Frontend and Integration Engineer",
+      "outcomes": [
+        "Built dashboard experiences for purchased e-books.",
+        "Integrated Lulu print-on-demand API for publishing workflows.",
+        "Integrated SquareUp for secure payment operations."
+      ],
+      "screenshots": [
+        "assets/images/card1.jpg",
+        "assets/images/card2.jpg",
+        "assets/images/card3.jpg"
+      ]
+    },
+    {
+      "slug": "tuxedo-air-platform",
+      "title": "Tuxedo Air Platform",
+      "domain": "Aviation and Corporate",
+      "summary": "Corporate aviation website showcasing services, operations, fleet data, and certifications.",
+      "tech": "Laravel, SQL, Blade, JavaScript",
+      "live_url": "https://tuxedo-frontend-stage.devdesignbuild.com/",
+      "problem": "The organization needed structured dynamic content with scalable admin management.",
+      "role": "Full Stack Engineer",
+      "outcomes": [
+        "Built reusable admin panels for services and fleet management.",
+        "Implemented responsive frontend pages using Blade and modern CSS.",
+        "Maintained clean MVC architecture for long-term scalability."
+      ],
+      "screenshots": [
+        "assets/images/card1.jpg",
+        "assets/images/card2.jpg",
+        "assets/images/card3.jpg"
+      ]
+    }
+  ]
+}

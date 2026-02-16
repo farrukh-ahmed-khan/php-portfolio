@@ -1,0 +1,172 @@
+.about_us {
+    background-size: cover;
+    padding: 100px 157px;
+}
+
+.content-head h5 {
+    color: #f5ea14;
+    font-family: "Gravedigger";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.6px;
+    margin-bottom: 1rem;
+}
+
+.content-about-para p {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #fff;
+    
+    font-family: "Poppins";
+}
+
+
+.about-office-numbers .office-content-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about-office-numbers .office-content-head h5 {
+    font-size: 64px;
+    line-height: 70px;
+    font-weight: 400;
+    font-family: "Gravedigger";
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #d0d91c6b;
+    transition: 0.3s;
+    letter-spacing: 8px;
+}
+
+.about-office-numbers .office-content-head span {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Poppins";
+    margin-left: -30px;
+    text-transform: uppercase;
+}
+
+.about-office-content {
+    border-right: 2px solid #e5e5e5;
+    display: flex;
+    justify-content: center;
+}
+
+.last-about-office {
+    border-right: none !important;
+}
+
+section.about_us_what_we_do {
+    padding: 100px 157px;
+}
+
+.content-head-what h5 {
+    color: #f5ea14;
+    font-family: "Gravedigger";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.6px;
+    margin-bottom: 1rem;
+}
+
+.content-subhead-what p {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 2rem;
+    font-family: "Poppins";
+
+}
+
+.progress-bar-wrapper .progress-bar-content .progress-bar-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.progress-bar-wrapper .progress-bar-content .progress-bar-head span:first-child {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #fff;
+    font-family: "Poppins";
+    text-transform: uppercase;
+}
+
+.progress-bar-wrapper .progress-bar-content .progress-bar-head span:nth-child(2) {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: "Gravedigger";
+    color: #d0d91c;
+}
+
+.progress-bar {
+    height: 4px;
+    width: 100%;
+    background-color: #e5e5e5;
+}
+.progress-bar .progress-bar-fill{
+    height: 100%;
+    background-color: #d0d91c;
+}
+.softnox-gallery{
+    padding-top: 100px;
+}
+@media (max-width: 1300px){
+    .about-office-content{
+        border-right: none;
+    }
+}
+@media (max-width: 768px){
+    .about_us {
+        padding: 100px 0px;
+    }
+    section.about_us_what_we_do{
+        padding: 100px 0px;
+    }
+    .content-head h5{
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .content-about-para p{
+        font-size: 18px;
+        line-height: 24px;
+    
+    }
+    .softnox-gallery-head h4{
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .testimonial-head h4{
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .get_in_touch .get-in-touch-head h4{
+        font-size: 28px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .get_in_touch .get-in-touch-para p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .con-icon img{
+        width: 20px;
+    }
+    .get_in_touch .con-wrapper .con-text p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

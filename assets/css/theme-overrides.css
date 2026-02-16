@@ -1,0 +1,260 @@
+:root {
+  --theme-bg: #070b16;
+  --theme-bg-soft: #0f172a;
+  --theme-panel: #131d33;
+  --theme-panel-2: #1b2744;
+  --theme-line: rgba(255, 255, 255, 0.14);
+  --theme-text: #f5f8ff;
+  --theme-muted: #b6c2dc;
+  --theme-accent: #36e0b2;
+  --theme-accent-2: #f5ea14;
+  --theme-shadow: 0 16px 36px rgba(0, 0, 0, 0.32);
+}
+
+html,
+body {
+  background:
+    radial-gradient(circle at 12% 8%, #1b284b 0%, rgba(27, 40, 75, 0) 35%),
+    radial-gradient(circle at 88% 0%, #11363f 0%, rgba(17, 54, 63, 0) 32%),
+    var(--theme-bg) !important;
+  color: var(--theme-text) !important;
+}
+
+body * {
+  border-color: var(--theme-line);
+}
+
+a {
+  transition: all 0.25s ease;
+}
+
+/* Header / Navigation */
+header .main-header {
+  background: rgba(8, 13, 26, 0.8) !important;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.overlay-navigation {
+  background: linear-gradient(145deg, rgba(13, 20, 38, 0.95), rgba(19, 31, 56, 0.95)) !important;
+}
+
+.overlay-navigation nav ul li a,
+.overlay-navigation nav ul li a:visited {
+  color: var(--theme-text) !important;
+}
+
+.overlay-navigation nav ul li a:hover {
+  color: var(--theme-accent) !important;
+}
+
+/* Section polish */
+.banner-color,
+.about-us,
+.latest-product,
+.vertical-gallery,
+.testimonial-sec,
+.get_in_touch,
+.counter-softnox,
+.why_us,
+.service-wrapper,
+.services-tab,
+.serv-box,
+.intro-corp,
+.call-action-img,
+.softnox-contact-form-wrapper {
+  position: relative;
+}
+
+.banner-color::before,
+.about-us::before,
+.get_in_touch::before {
+  pointer-events: none;
+}
+
+/* Cards / blocks */
+.card,
+.serv-item,
+.review,
+.form-wrapper,
+.con-wrapper,
+.service-wrapper .head-service-wrapper,
+.prcards .card-container,
+.service-wrapper .card-container,
+.service-wrapper .card-container2,
+.services-tab .serv-tab-cont .item .cont,
+.intro-corp .card,
+.softnox-contact-form-wrapper .full-width form {
+  background: linear-gradient(180deg, rgba(23, 34, 58, 0.88), rgba(15, 23, 42, 0.92)) !important;
+  border: 1px solid var(--theme-line) !important;
+  border-radius: 14px !important;
+  box-shadow: var(--theme-shadow) !important;
+}
+
+.card:hover,
+.serv-item:hover,
+.review:hover,
+.prcards .card-container:hover,
+.service-wrapper .card-container:hover,
+.service-wrapper .card-container2:hover {
+  transform: translateY(-4px);
+  border-color: rgba(54, 224, 178, 0.52) !important;
+}
+
+.prcards .card-container,
+.service-wrapper .card-container,
+.service-wrapper .card-container2,
+.card,
+.serv-item,
+.review {
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card img,
+.image-card img {
+  transition: transform 0.35s ease;
+}
+
+.card:hover img,
+.image-card:hover img {
+  transform: scale(1.04);
+}
+
+/* Titles & readable text */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--theme-text) !important;
+}
+
+p,
+li,
+span,
+.con-text p,
+.about_us_para p,
+.serv-tab-cont .tab-content .item .cont .text p {
+  color: var(--theme-muted) !important;
+}
+
+.about_us_head h4,
+.latest-product-head h4,
+.wht-we-do-head h4,
+.testimonial-head h4,
+.get-in-touch-head h4,
+.head-wrapper h4,
+.page-header .caption .sub-title,
+.sec-lg-head .dot-titl-non,
+.serv-tab-link .item-link,
+.sec-head .sub-title {
+  color: var(--theme-accent-2) !important;
+}
+
+/* CTA links/buttons */
+.btn,
+.softnox-btn button,
+.sendbtn-wrap button,
+.butn,
+.butn-circle,
+.about_us_btn a,
+.latest-product-btn a,
+.service-btn-wrapper a,
+.why_us_btn a {
+  border: 1px solid rgba(54, 224, 178, 0.45) !important;
+  background: linear-gradient(95deg, rgba(54, 224, 178, 0.18), rgba(54, 224, 178, 0.06)) !important;
+  color: var(--theme-text) !important;
+}
+
+.btn:hover,
+.softnox-btn button:hover,
+.sendbtn-wrap button:hover,
+.butn:hover,
+.butn-circle:hover,
+.about_us_btn a:hover,
+.latest-product-btn a:hover,
+.service-btn-wrapper a:hover,
+.why_us_btn a:hover {
+  background: linear-gradient(95deg, rgba(54, 224, 178, 0.3), rgba(54, 224, 178, 0.1)) !important;
+  border-color: rgba(54, 224, 178, 0.7) !important;
+}
+
+/* Inputs/forms */
+input,
+textarea,
+select {
+  background: rgba(10, 17, 33, 0.75) !important;
+  border: 1px solid var(--theme-line) !important;
+  color: var(--theme-text) !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #8fa0c4 !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none !important;
+  border-color: rgba(54, 224, 178, 0.6) !important;
+  box-shadow: 0 0 0 3px rgba(54, 224, 178, 0.14) !important;
+}
+
+/* Footer */
+footer,
+.r2 {
+  background: linear-gradient(180deg, rgba(11, 17, 31, 0.9), rgba(8, 12, 24, 0.98)) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footerLinks li a,
+.footerLinks li a i,
+.copywright-wrap p,
+.about_email_info p,
+.about_email_info h4 {
+  color: var(--theme-muted) !important;
+}
+
+.footerLinks li a:hover {
+  color: var(--theme-accent) !important;
+}
+
+/* Utility accents */
+.active-filter,
+.filter-wrapper .filter:hover,
+.service-wrapper .head-service-wrapper {
+  border-color: rgba(54, 224, 178, 0.45) !important;
+}
+
+.points-wrapper p,
+.designation h5,
+.pr-name h5,
+.card-content h5,
+.number-increament-wrapper,
+.year_wrapper p span {
+  color: var(--theme-text) !important;
+}
+
+.number-increament-wrapper span:last-child {
+  color: var(--theme-accent) !important;
+}
+
+/* Ensure mobile is clean */
+@media (max-width: 991px) {
+  .main-header {
+    padding: 14px 16px !important;
+  }
+
+  .service-wrapper,
+  .banner-color,
+  .about-us,
+  .latest-product,
+  .get_in_touch,
+  .testimonial-sec,
+  .vertical-gallery {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
