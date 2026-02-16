@@ -240,9 +240,9 @@
             <div class="col-md-3">
                <div class="card-container">
                   <div class="pr-card-overlay"><div class="designation"><h5>Corporate Platform</h5></div></div>
-                  <div class="img-wrap"><img src="assets/images/pr-card.png" alt=""></div>
+                  <div class="img-wrap"><img src="assets/images/tuxedo.png" alt=""></div>
                   <div class="btm-card"><div><img src="assets/images/pr-card-btm.png" alt=""></div><div class="pr-name"><h5>Tuxedo Air Platform</h5>
-                  <p>Laravel, SQL, Blade, JavaScript</p><p><a href="https://tuxedo-frontend-stage.devdesignbuild.com/" target="_blank" rel="noreferrer" style="color:#fff;text-decoration:underline;">Visit Project</a></p></div></div>
+                  <p>Laravel, SQL, Blade, JavaScript</p><p><a href="https://tuxedo.infinityfreeapp.com/" target="_blank" rel="noreferrer" style="color:#fff;text-decoration:underline;">Visit Project</a></p></div></div>
                </div>
             </div>
             <div class="col-md-3">

@@ -166,7 +166,7 @@
       "domain": "Aviation and Corporate",
       "summary": "Corporate aviation website showcasing services, operations, fleet data, and certifications.",
       "tech": "Laravel, SQL, Blade, JavaScript",
-      "live_url": "https://tuxedo-frontend-stage.devdesignbuild.com/",
+      "live_url": "https://tuxedo.infinityfreeapp.com/",
       "problem": "The organization needed structured dynamic content with scalable admin management.",
       "role": "Full Stack Engineer",
       "outcomes": [
