@@ -170,3 +170,40 @@ section.about_us_what_we_do {
         line-height: 20px;
     }
 }
+
+/* Distinct career/testimonial cards */
+.testimonial-sec .review {
+    border-left: 4px solid transparent;
+    border-radius: 14px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.testimonial-sec .review:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-sec .review.review-a {
+    border-left-color: #f5ea14;
+    background: linear-gradient(180deg, rgba(245, 234, 20, 0.12), rgba(0, 21, 17, 0.85));
+}
+
+.testimonial-sec .review.review-b {
+    border-left-color: #45d4ff;
+    background: linear-gradient(180deg, rgba(69, 212, 255, 0.12), rgba(0, 21, 17, 0.85));
+}
+
+.testimonial-sec .review.review-c {
+    border-left-color: #7cffc7;
+    background: linear-gradient(180deg, rgba(124, 255, 199, 0.12), rgba(0, 21, 17, 0.85));
+}
+
+.testimonial-sec .review.review-d {
+    border-left-color: #ffb86b;
+    background: linear-gradient(180deg, rgba(255, 184, 107, 0.12), rgba(0, 21, 17, 0.85));
+}
+
+.testimonial-sec .review.review-e {
+    border-left-color: #d0a3ff;
+    background: linear-gradient(180deg, rgba(208, 163, 255, 0.12), rgba(0, 21, 17, 0.85));
+}

@@ -368,11 +368,11 @@
          <div class="row">
             <div class="col-md-12">
                <div class="testimonial-head">
-                  <h4 class="wow flipInY" style="animation-delay: 0.2s; visibility: visible; animation-name: flipInY;">CLIENT AND <span>MANAGER</span> TESTIMONIALS</h4>
+                  <h4 class="wow flipInY" style="animation-delay: 0.2s; visibility: visible; animation-name: flipInY;">PROFESSIONAL <span>CAREER</span> HIGHLIGHTS</h4>
                   <div class="test-bdr-btm wow bounceIn" style="animation-delay: 0.6s; visibility: visible; animation-name: bounceIn;">
                      <div></div>
                   </div>
-                  <p class="wow bounceIn" style="animation-delay: 1s; visibility: visible; animation-name: bounceIn;">RECOMMENDATIONS</p>
+                  <p class="wow bounceIn" style="animation-delay: 1s; visibility: visible; animation-name: bounceIn;">EXPERIENCE SNAPSHOT</p>
                </div>
             </div>
 
@@ -383,10 +383,15 @@
          <div class="container-fluid">
             <div class="row reviews-wrapper-container">
                <div class="col-md-4 wow bounceIn" style="animation-delay: .3s; visibility: visible; animation-name: bounceIn;">
-                  <div class="row review ">
+                  <div class="row review review-a">
                      <div class="col-md-12 mb-4 pb-5">
                         <div class="text">
-                           <p>Farrukh consistently delivers production-ready features with excellent ownership. His full stack execution has improved our delivery velocity and quality.</p>
+                           <p>
+                              • Design and develop custom web applications using React.js, Node.js, TypeScript and MongoDB.<br>
+                              • Build REST APIs using Node.js and Express.js, and handle API integrations.<br>
+                              • Collaborate with UX teams and develop scalable microservices in agile workflows.<br>
+                              • Optimize MongoDB design and deliver cross-browser HTML, CSS and JavaScript layouts.
+                           </p>
                         </div>
                      </div>
                      <div class="col-md-10">
@@ -395,8 +400,8 @@
                               <img src="assets/images/reviewer1.png" alt="">
                            </div>
                            <div class="name-review-wrap">
-                               <h5>Engineering Manager</h5>
-                               <p>SOFTNOX TECHNOLOGIES</p>
+                               <h5>Senior Full Stack Engineer</h5>
+                               <p>SOFTNOX TECHNOLOGIES | Karachi, Pakistan | June 2025 - Present</p>
                            </div>
                         </div>
                      </div>
@@ -406,10 +411,15 @@
                   </div>
                </div>
                <div class="col-md-4 wow bounceIn" style="animation-delay: .6s; visibility: visible; animation-name: bounceIn;">
-                  <div class="row review ">
+                  <div class="row review review-b">
                      <div class="col-md-12 mb-4 pb-5">
                         <div class="text">
-                           <p>His frontend architecture decisions made our React and Next.js applications easier to scale, test, and maintain across releases.</p>
+                           <p>
+                              • Led high-performance web application development using React.js and Next.js.<br>
+                              • Translated complex UI/UX into responsive components with modern CSS frameworks.<br>
+                              • Optimized state management with Redux and Context API.<br>
+                              • Implemented accessibility and cross-browser compatibility standards.
+                           </p>
                         </div>
                      </div>
                      <div class="col-md-10">
@@ -418,8 +428,8 @@
                               <img src="assets/images/reviewer1.png" alt="">
                            </div>
                            <div class="name-review-wrap">
-                               <h5>Project Lead</h5>
-                               <p>SOFTNOX TECHNOLOGIES</p>
+                               <h5>Senior Frontend Developer</h5>
+                               <p>SOFTNOX TECHNOLOGIES | Karachi, Pakistan | June 2023 - June 2025</p>
                            </div>
                         </div>
                      </div>
@@ -429,10 +439,15 @@
                   </div>
                </div>
                <div class="col-md-4 wow bounceIn" style="animation-delay: 1.2s; visibility: visible; animation-name: bounceIn;">
-                  <div class="row review ">
+                  <div class="row review review-c">
                      <div class="col-md-12  mb-4 pb-5">
                         <div class="text">
-                           <p>Farrukh handled both API and UI work efficiently, and he was dependable in solving complex integration issues under deadlines.</p>
+                           <p>
+                              • Participated in UI design and implementation for multiple MERN projects.<br>
+                              • Designed and developed REST APIs using Node.js and Express.js.<br>
+                              • Enhanced code reusability and efficiency in React.js applications.<br>
+                              • Debugged and resolved issues in legacy codebases.
+                           </p>
                         </div>
                      </div>
                      <div class="col-md-10">
@@ -441,8 +456,8 @@
                               <img src="assets/images/reviewer1.png" alt="">
                            </div>
                            <div class="name-review-wrap">
-                               <h5>Technical Manager</h5>
-                               <p>AxeCorp Technologies</p>
+                               <h5>Full Stack Engineer</h5>
+                               <p>AxeCorp Technologies | Karachi, Pakistan | March 2022 - June 2023</p>
                            </div>
                         </div>
                      </div>
@@ -452,10 +467,15 @@
                   </div>
                </div>
                <div class="col-md-4 wow bounceIn" style="animation-delay: 1.5s; visibility: visible; animation-name: bounceIn;">
-                  <div class="row review ">
+                  <div class="row review review-d">
                      <div class="col-md-12 mb-4 pb-5">
                         <div class="text">
-                           <p>He brings strong communication and clean coding practices. His collaboration with design and backend teams was consistently effective.</p>
+                           <p>
+                              • Built user interfaces and state management using React.js.<br>
+                              • Implemented React.js controller logic for view data handling.<br>
+                              • Implemented REST APIs and contributed to backend with Node.js, Express.js and MongoDB.<br>
+                              • Ensured seamless frontend-backend integration.
+                           </p>
                         </div>
                      </div>
                      <div class="col-md-10">
@@ -464,8 +484,8 @@
                               <img src="assets/images/reviewer1.png" alt="">
                            </div>
                            <div class="name-review-wrap">
-                               <h5>Product Owner</h5>
-                               <p>Client Feedback</p>
+                               <h5>Frontend Developer</h5>
+                               <p>TexvnX | Karachi, Pakistan | March 2021 - February 2022</p>
                            </div>
                         </div>
                      </div>
@@ -475,10 +495,13 @@
                   </div>
                </div>
                <div class="col-md-4 wow bounceIn" style="animation-delay: 1.7s; visibility: visible; animation-name: bounceIn;">
-                  <div class="row review ">
+                  <div class="row review review-e">
                      <div class="col-md-12 mb-4 pb-5">
                         <div class="text">
-                           <p>We appreciated his proactive approach, clear updates, and ability to convert business requirements into polished web and mobile experiences.</p>
+                           <p>
+                              • Core stack across experience: React.js, Next.js, Node.js, Express.js, TypeScript, MongoDB and MySQL.<br>
+                              • Strong focus on API integrations, scalable architecture and maintainable code quality.
+                           </p>
                         </div>
                      </div>
                      <div class="col-md-10">
@@ -487,8 +510,8 @@
                               <img src="assets/images/reviewer1.png" alt="">
                            </div>
                            <div class="name-review-wrap">
-                               <h5>Operations Director</h5>
-                               <p>Client Feedback</p>
+                               <h5>Core Experience Summary</h5>
+                               <p>Web and Mobile Development</p>
                            </div>
                         </div>
                      </div>
