@@ -7,6 +7,20 @@
     include "404.php";
     exit;
     }
+    $indexFeaturedSlugs = [
+    'amz-geeks',
+    'texas-center-wellness',
+    'four-coaches',
+    'pepperoni-pizza',
+    'tuxedo-air-platform',
+    ];
+    $featuredProjects = [];
+    foreach ($indexFeaturedSlugs as $featuredSlug) {
+    $fp = get_project_by_slug($featuredSlug);
+    if ($fp) {
+        $featuredProjects[] = $fp;
+    }
+    }
 
     $pageTitle       = $project['title'] . ' | Project Case Study';
     $pageDescription = $project['summary'];
@@ -86,9 +100,29 @@
         .project-links { margin-top: 14px; display: flex; gap: 14px; flex-wrap: wrap; }
         .project-links a { color: #f5ea14; border-bottom: 1px solid rgba(245,234,20,.6); text-decoration: none; }
         .project-links a:hover { color: #fff; border-color: #fff; }
+        .featured-block {
+            margin-top: 20px;
+            border: 1px solid rgba(255,255,255,.14);
+            border-radius: 12px;
+            padding: 16px;
+            background: linear-gradient(180deg, rgba(0,21,17,.9), rgba(0,12,10,.95));
+        }
+        .featured-block h2 { margin: 0 0 12px; color: #fff; font-size: 24px; }
+        .featured-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
+        .featured-item {
+            border: 1px solid rgba(255,255,255,.14);
+            border-radius: 10px;
+            padding: 12px;
+            background: rgba(0,0,0,.16);
+        }
+        .featured-item h3 { margin: 0 0 6px; color: #f5ea14; font-size: 18px; }
+        .featured-item p { margin: 0; color: #d8dfde; font-size: 13px; text-align: left; }
+        .featured-item .links { margin-top: 8px; display: flex; gap: 10px; flex-wrap: wrap; }
+        .featured-item .links a { color: #f5ea14; text-decoration: none; border-bottom: 1px solid rgba(245,234,20,.55); }
+        .featured-item .links a:hover { color: #fff; border-color: #fff; }
         @media (max-width: 900px) {
             .project-template { padding: 100px 16px 70px; }
-            .project-meta, .project-sections, .screens { grid-template-columns: 1fr; }
+            .project-meta, .project-sections, .screens, .featured-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -171,6 +205,21 @@
             <div class="screens">
                 <?php foreach (($project['screenshots'] ?? []) as $shot): ?>
                     <img src="<?php echo e($shot); ?>" alt="<?php echo e($project['title']); ?> screenshot" loading="lazy" decoding="async">
+                <?php endforeach; ?>
+            </div>
+        </div>
+        <div class="featured-block">
+            <h2>Featured Projects</h2>
+            <div class="featured-grid">
+                <?php foreach ($featuredProjects as $featured): ?>
+                    <article class="featured-item">
+                        <h3><?php echo e($featured['title']); ?></h3>
+                        <p><?php echo e($featured['tech']); ?></p>
+                        <div class="links">
+                            <a href="project.php?slug=<?php echo urlencode($featured['slug']); ?>">View Details</a>
+                            <a href="<?php echo e($featured['live_url']); ?>" target="_blank" rel="noreferrer">Visit Project</a>
+                        </div>
+                    </article>
                 <?php endforeach; ?>
             </div>
         </div>
