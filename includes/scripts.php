@@ -10,8 +10,7 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r82/three.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/127738/perlin.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
 
-<script>window.addEventListener("load",function(){if(window.WOW){new WOW().init();}});</script>
 <?php include("includes/analytics.php"); ?>

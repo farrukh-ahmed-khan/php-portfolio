@@ -87,3 +87,354 @@
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+/* Global responsive pass */
+@media (max-width: 1200px) {
+  header {
+    padding: 18px 36px !important;
+  }
+
+  .banner-color,
+  .about-us,
+  .latest-product,
+  .why_us,
+  .counter-softnox,
+  .p-100,
+  .get_in_touch,
+  .service-wrapper,
+  .project-template,
+  .softnox-contact-banner,
+  .softnox-contact-form-wrapper {
+    padding-left: 36px !important;
+    padding-right: 36px !important;
+  }
+
+  .firstSec .banner-content {
+    padding: 160px 0 110px;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 16px 20px !important;
+  }
+
+  .logo span {
+    font-size: 20px !important;
+  }
+
+  .menu-Bar img {
+    width: 62px !important;
+  }
+
+  .cv-btn {
+    font-size: 11px;
+    padding: 7px 12px;
+  }
+
+  .banner-color,
+  .about-us,
+  .latest-product,
+  .why_us,
+  .counter-softnox,
+  .p-100,
+  .get_in_touch,
+  .service-wrapper,
+  .project-template,
+  .softnox-contact-banner,
+  .softnox-contact-form-wrapper {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .banner-content h1,
+  .banner-content h1 div,
+  .banner-contents h1 {
+    font-size: 42px !important;
+    line-height: 52px !important;
+    letter-spacing: 1.2px !important;
+    flex-wrap: wrap;
+  }
+
+  .firstSec {
+    height: auto !important;
+    min-height: 56vh;
+  }
+
+  .firstSec .banner-content {
+    padding: 130px 0 80px;
+  }
+
+  .firstSec .banner-content h1 {
+    font-size: 44px !important;
+    line-height: 1.2 !important;
+  }
+
+  .r1::before,
+  .about_after::after,
+  .r2::before,
+  .get_in_touch::after {
+    display: none !important;
+  }
+
+  .layer {
+    display: none !important;
+  }
+
+  .banner_vector_icons {
+    margin: 32px 0 0 !important;
+  }
+
+  .banner_vector_icons .first {
+    left: 0 !important;
+  }
+
+  .bdr_btm,
+  .bdr-btm {
+    width: 72px;
+  }
+
+  .about-office-content {
+    border-right: 0 !important;
+    justify-content: flex-start;
+  }
+
+  .about-office-numbers .office-content-head {
+    justify-content: center;
+  }
+
+  .about-office-numbers .office-content-head span {
+    margin-left: 0 !important;
+  }
+
+  .services-tab .serv-tab-cont .item .img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .services-tab .serv-tab-cont .item .cont {
+    position: static !important;
+    margin-top: 0;
+    padding: 24px 20px !important;
+  }
+
+  .call-action-img .sec-bg-img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 0 !important;
+  }
+
+  .ftr-lt,
+  .ftr-md1 {
+    margin-bottom: 26px;
+  }
+
+  .copywright-wrap p {
+    margin-top: 12px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .container-fluid {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  header .col-6 {
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .logo span {
+    font-size: 17px !important;
+    letter-spacing: 0.4px !important;
+  }
+
+  .menu-Bar img {
+    width: 52px !important;
+  }
+
+  .cv-btn {
+    padding: 6px 10px;
+    font-size: 10px;
+    letter-spacing: 0.3px;
+  }
+
+  .banner-color {
+    padding-top: 105px !important;
+    padding-bottom: 70px !important;
+  }
+
+  .banner-content h1,
+  .banner-content h1 div,
+  .banner-contents h1 {
+    font-size: 30px !important;
+    line-height: 1.25 !important;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .about-us .about_subhead h3,
+  .about-us .about_subhead h3 div {
+    font-size: 30px !important;
+    line-height: 1.2 !important;
+  }
+
+  .latest-product .latest-product-head h4,
+  .wht-we-do-head h4,
+  .softnox-gallery-head h4,
+  .testimonial-head h4 {
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+    letter-spacing: 0.8px !important;
+  }
+
+  .latest-product-btn a {
+    justify-content: flex-start !important;
+    font-size: 12px !important;
+    margin-top: 12px;
+  }
+
+  .firstSec {
+    min-height: 46vh;
+  }
+
+  .firstSec .banner-content {
+    padding: 112px 0 48px !important;
+  }
+
+  .firstSec .banner-content p,
+  .p2 p,
+  .Iam p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+
+  .widthCus {
+    width: 100% !important;
+  }
+
+  .form-wrapper {
+    margin-top: 16px;
+    padding: 18px 14px !important;
+  }
+
+  .form-wrapper .sendbtn-wrap button {
+    width: 100%;
+  }
+
+  .about-office-numbers .office-content-head {
+    text-align: center;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .about-office-numbers .office-content-head h5 {
+    font-size: 44px;
+    line-height: 1.1;
+    letter-spacing: 2px;
+  }
+
+  .about-office-numbers .office-content-head span {
+    font-size: 16px;
+    line-height: 1.3;
+    display: block;
+    width: 100%;
+  }
+
+  .pro-card-wrapper {
+    gap: 16px;
+  }
+
+  .card-container .img-wrap img {
+    height: auto !important;
+    min-height: 220px;
+    border-radius: 18px !important;
+  }
+
+  .pr-card-overlay {
+    border-radius: 18px !important;
+    height: 100% !important;
+  }
+
+  .btm-card {
+    position: static !important;
+  }
+
+  .btm-card > div:first-child {
+    display: none;
+  }
+
+  .card-container .pr-name {
+    position: static !important;
+    padding: 12px;
+    margin-top: 10px;
+    background: rgba(0, 21, 17, 0.78);
+    border: 1px solid rgba(245, 234, 20, 0.25);
+    border-radius: 12px;
+  }
+
+  .card-container .pr-name h5,
+  .card-container .pr-name p {
+    text-align: left !important;
+  }
+
+  .counter-softnox .number-content {
+    padding: 10px 8px;
+  }
+
+  .number-content p {
+    font-size: 16px;
+  }
+
+  footer {
+    padding-bottom: 94px;
+  }
+
+  .pl-5 {
+    padding-left: 15px !important;
+  }
+
+  .ftr-lt .p1 {
+    width: 100%;
+  }
+
+  .footerLinks li {
+    margin-bottom: 8px;
+  }
+
+  .hire-me-sticky {
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo span {
+    font-size: 14px !important;
+  }
+
+  .cv-btn {
+    padding: 6px 8px;
+    font-size: 9px;
+  }
+
+  .banner-content h1,
+  .banner-content h1 div,
+  .banner-contents h1 {
+    font-size: 25px !important;
+    letter-spacing: 0.4px !important;
+  }
+
+  .about-us .about_subhead h3,
+  .about-us .about_subhead h3 div {
+    font-size: 25px !important;
+  }
+
+  .latest-product .latest-product-head h4,
+  .wht-we-do-head h4,
+  .softnox-gallery-head h4,
+  .testimonial-head h4 {
+    font-size: 24px !important;
+  }
+}
