@@ -1,57 +1,100 @@
 <?php
-    session_start();
+session_start();
 
-    $errors         = [];
-    $successMessage = '';
-    $name           = '';
-    $email          = '';
-    $subject        = '';
-    $message        = '';
+require 'vendor/autoload.php';
 
-    if (empty($_SESSION['contact_csrf'])) {
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+$errors = [];
+$successMessage = '';
+$name = '';
+$email = '';
+$subject = '';
+$message = '';
+
+if (empty($_SESSION['contact_csrf'])) {
     $_SESSION['contact_csrf'] = bin2hex(random_bytes(16));
-    }
+}
 
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
     $token = $_POST['csrf_token'] ?? '';
-    if (! hash_equals($_SESSION['contact_csrf'], $token)) {
-        $errors[] = 'Invalid form token. Please refresh and try again.';
+
+    if (!hash_equals($_SESSION['contact_csrf'], $token)) {
+        $errors[] = 'Invalid form token.';
     }
 
-    $name    = trim($_POST['name'] ?? '');
-    $email   = trim($_POST['email'] ?? '');
+    $name = trim($_POST['name'] ?? '');
+    $email = trim($_POST['email'] ?? '');
     $subject = trim($_POST['subject'] ?? '');
     $message = trim($_POST['message'] ?? '');
 
-    if ($name === '' || strlen($name) < 2) {
-        $errors[] = 'Please enter a valid name.';
-    }
-    if (! filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $errors[] = 'Please enter a valid email address.';
-    }
-    if ($message === '' || strlen($message) < 10) {
-        $errors[] = 'Message should be at least 10 characters.';
+    if ($name === '') {
+        $errors[] = 'Name required';
     }
 
-    if (! $errors) {
-        $to          = 'khanfarrukh200@gmail.com';
-        $safeSubject = $subject !== '' ? $subject : 'New Portfolio Contact Message';
-        $body        = "Name: {$name}\nEmail: {$email}\nSubject: {$safeSubject}\n\nMessage:\n{$message}";
-        $headers     = "From: {$email}\r\nReply-To: {$email}\r\nX-Mailer: PHP/" . phpversion();
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errors[] = 'Valid email required';
+    }
 
-        if (@mail($to, $safeSubject, $body, $headers)) {
-            $successMessage           = 'Thanks, your message was sent successfully.';
-            $name                     = '';
-            $email                    = '';
-            $subject                  = '';
-            $message                  = '';
+    if ($message === '') {
+        $errors[] = 'Message required';
+    }
+
+    if (!$errors) {
+
+        $mail = new PHPMailer(true);
+
+        try {
+
+            $mail->isSMTP();
+            $mail->Host = 'smtp.gmail.com';
+            $mail->SMTPAuth = true;
+            $mail->Username = 'khanfarrukh200@gmail.com';
+            $mail->Password = 'tail yssx huuu mhdr';
+            $mail->SMTPSecure = 'tls';
+            $mail->Port = 587;
+
+            $mail->setFrom('khanfarrukh200@gmail.com', 'Portfolio');
+
+            $mail->addAddress('khanfarrukh200@gmail.com');
+
+            $mail->addReplyTo($email, $name);
+
+            $mail->Subject = $subject ?: 'Portfolio Contact';
+
+            $mail->Body = "
+
+Name: $name
+
+Email: $email
+
+Subject: $subject
+
+Message:
+
+$message
+
+";
+
+            $mail->send();
+
+            $successMessage = "Message sent successfully";
+
             $_SESSION['contact_csrf'] = bin2hex(random_bytes(16));
-        } else {
-            $errors[] = 'Message could not be sent from this server. Please email directly at khanfarrukh200@gmail.com.';
+
+        } catch (Exception $e) {
+
+            $errors[] = $mail->ErrorInfo;
+
         }
+
     }
-    }
+
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -147,24 +190,72 @@
              <div class="col-lg-1"></div>
             <div class="col-lg-5 col-md-12">
                <div class="form-wrapper">
-                  <form action="">
-                     <div class="lable-input-wrap">
-                        <label for="name">YOUR NAME</label>
-                        <input type="text" name="" id="name">
-                     </div>
-                     <div class="lable-input-wrap">
-                        <label for="email">YOUR EMAIL</label>
-                        <input type="email" name="" id="email">
-                     </div>
-                     <div class="lable-input-wrap">
-                        <label for="message">YOUR MESSAGE</label>
-                        <textarea>
-                        </textarea>
-                     </div>
-                     <div class="sendbtn-wrap">
-                        <button type="submit">SEND MESSAGE</button>
-                     </div>
-                  </form>
+                  <?php
+
+
+if ($successMessage) {
+
+echo "<p style='color:green'>$successMessage</p>";
+
+}
+
+
+foreach ($errors as $error) {
+
+echo "<p style='color:red'>$error</p>";
+
+}
+
+
+?>
+                  <form method="POST" action="">
+
+<input type="hidden" name="csrf_token" value="<?php echo $_SESSION['contact_csrf']; ?>">
+
+<div class="lable-input-wrap">
+
+<label>YOUR NAME</label>
+
+<input type="text" name="name" required>
+
+</div>
+
+
+<div class="lable-input-wrap">
+
+<label>YOUR EMAIL</label>
+
+<input type="email" name="email" required>
+
+</div>
+
+
+<div class="lable-input-wrap">
+
+<label>SUBJECT</label>
+
+<input type="text" name="subject">
+
+</div>
+
+
+<div class="lable-input-wrap">
+
+<label>YOUR MESSAGE</label>
+
+<textarea name="message" required></textarea>
+
+</div>
+
+
+<div class="sendbtn-wrap">
+
+<button type="submit">SEND MESSAGE</button>
+
+</div>
+
+</form>
+
                </div>
             </div>
             <div class="col-lg-1 col-md-0"></div>

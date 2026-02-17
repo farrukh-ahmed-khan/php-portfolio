@@ -31,6 +31,7 @@
     animation: rotation 20s linear infinite;
   }
   .about_after::after {
+    display: none;
     content: "";
     background: url(../images/Looper.png);
     top: 32% !important;
@@ -1046,6 +1047,7 @@ Burger king
 }
 
 .about_after::after {
+  display: none;
   content: "";
   background: url("../images/Looper.png");
   width: 1000px;
@@ -1102,6 +1104,7 @@ Burger king
   width: 50%;
   height: 100%;
   background-size: 100% 100%;
+  animation: float-up 6s ease-in-out infinite;
 }
 .why_us::after {
   content: "";
@@ -1114,6 +1117,7 @@ Burger king
   width: 60%;
   height: 100%;
   z-index: -99999999999;
+  animation: float-down 6s ease-in-out infinite;
 }
 
 .experience_year_container .why_us_small {
