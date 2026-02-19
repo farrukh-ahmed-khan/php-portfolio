@@ -119,7 +119,7 @@
         .case-item a:hover { color: #fff; border-color: #fff; }
         @media (max-width: 1030px) {
             .service-wrapper { padding: 100px 40px; }
-            .head-wrapper h1 { text-align: center; margin-bottom: 20px; }
+            .head-wrapper h1 { text-align: center; margin-bottom: 20px; font-size: 12px;}
         }
         @media (max-width: 800px) {
             .service-wrapper { padding: 100px 16px; }

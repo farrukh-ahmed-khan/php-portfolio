@@ -145,60 +145,63 @@
    </section>
 
 
-    <section class="about-office-numbers">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-3 col-md-12 pt-3 pb-3">
-                    <div class="about-office-content">
-                        <div class="office-content-head">
-                            <h5>
-                                4+
-                            </h5>
-                            <span>
-                                Years of </br> Experience
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-12 pt-3 pb-3">
-                    <div class="about-office-content">
-                        <div class="office-content-head">
-                            <h5>
-                                35+
-                            </h5>
-                            <span>
-                                Projects </br> Delivered
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-12 pt-3 pb-3">
-                    <div class="about-office-content">
-                        <div class="office-content-head">
-                            <h5>
-                                20+
-                            </h5>
-                            <span>
-                                Technologies </br> Used
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-12 pt-3 pb-3">
-                    <div class="about-office-content last-about-office">
-                        <div class="office-content-head">
-                            <h5>
-                                8+
-                            </h5>
-                            <span>
-                                Mobile Apps </br> Built
-                            </span>
-                        </div>
-                    </div>
-                </div>
+    <section class="counter-softnox">
+      <div class="row">
+         <div class="col-lg-3 col-md-6 col-sm-12 pb-3">
+            <div class="number-content text-center wow bounceIn" style="animation-delay: 0.2s; visibility: visible; animation-name: bounceIn;">
+               <div class="counter-img-wrap">
+                  <img src="assets/images/counter1.png" alt="Portfolio image" loading="lazy" decoding="async">
+               </div>
+               <div class="number-increament-wrapper">
+                  <span id="number_up1" class="number-increament">4</span><span>+</span>
+               </div>
+               <p>
+                  Years Experience
+               </p>
             </div>
-        </div>
-    </section>
+         </div>
+         <div class="col-lg-3 col-md-6 col-sm-12 pb-3">
+            <div class="number-content text-center wow bounceIn" style="animation-delay: 0.4s; visibility: visible; animation-name: bounceIn;">
+               <div class="counter-img-wrap">
+                  <img src="assets/images/counter2.png" alt="Portfolio image" loading="lazy" decoding="async">
+               </div>
+               <div class="number-increament-wrapper">
+                  <span id="number_up2" class="number-increament">35</span><span>+</span>
+               </div>
+               <p class="para">
+                  Projects Delivered
+               </p>
+            </div>
+         </div>
+         <div class="col-lg-3 col-md-6 col-sm-12 pb-3">
+            <div class="number-content text-center wow bounceIn" style="animation-delay: 0.6s; visibility: visible; animation-name: bounceIn;">
+               <div class="counter-img-wrap">
+                  <img src="assets/images/counter3.png" alt="Portfolio image" loading="lazy" decoding="async">
+               </div>
+               <div class="number-increament-wrapper">
+                  <span id="number_up3" class="number-increament">20</span><span>+</span>
+               </div>
+               <p>
+                  Core Technologies
+               </p>
+            </div>
+         </div>
+
+         <div class="col-lg-3 col-md-6 col-sm-12 pb-3">
+            <div class="number-content text-center  wow bounceIn" style="animation-delay: 0.8s; visibility: visible; animation-name: bounceIn;">
+               <div class="counter-img-wrap">
+                  <img src="assets/images/counter4.png" alt="Portfolio image" loading="lazy" decoding="async">
+               </div>
+               <div class="number-increament-wrapper">
+                  <span id="number_up4" class="number-increament">8</span><span>+</span>
+               </div>
+               <p>
+                  Mobile Apps Built
+               </p>
+            </div>
+         </div>
+      </div>
+   </section>
 
     <section class="latest-product mt-5">
       <div class="container-fluid">

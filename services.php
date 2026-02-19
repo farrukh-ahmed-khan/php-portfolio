@@ -670,12 +670,12 @@
     <section class="intro-corp section-padding pt-0">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-5 col-12">
                     <div class="sec-head mb-40">
                         <h6 class="sub-title">Experience.</h6>
                     </div>
                 </div>
-                <div class="col-lg-7">
+               <div class="col-lg-7 col-12">
                     <div class="cont">
                         <div class="text">
                             <h2 class="d-slideup wow animated" style="visibility: visible;">
