@@ -123,9 +123,7 @@ $message
                <div class="banner-content">
                   <h1 class="wow flipInY" style="animation-delay: 0.2s; visibility: visible; animation-name: flipInY;">BUILDING&nbsp;
                   </h1>
-                  <h1 class="wow bounceIn" style="animation-delay: 0.3s; visibility: visible; animation-name: bounceIn;">
-                     FARRUKH AHMED KHAN
-                  </h1>
+                 
                </div>
                <div class="banner-contents">
                   <h1 class="wow flipInY" style="animation-delay: 0.4s; visibility: visible; animation-name: flipInY;">
